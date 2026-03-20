@@ -3,151 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Route des Vins</title>
+<title>La Route des Vins - Bar Tabac</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f4efe6;
-    color: #3b2a1f;
+  margin:0;
+  font-family:Arial;
+  background:#111;
+  color:white;
 }
 
-header {
-    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+.hero {
+  height:90vh;
+  background:url("IMG_1.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
-header h1 {
-    font-size: 42px;
-    margin: 0;
+.hero h1 {
+  font-size:48px;
 }
 
-header p {
-    font-size: 20px;
+.section {
+  padding:50px 20px;
+  text-align:center;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+.grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
 }
 
-h2 {
-    border-bottom: 2px solid #8b5e3c;
-    padding-bottom: 10px;
+img {
+  width:100%;
+  border-radius:10px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #8b5e3c;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-footer {
-    background: #3b2a1f;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.footer {
+  background:#000;
+  padding:30px;
 }
 </style>
-
 </head>
 
 <body>
 
-<header>
-    <h1>La Route des Vins</h1>
-    <p>Bar · Tabac · Hôtel</p>
-</header>
-
-<section>
-<h2>Bienvenue</h2>
-<div class="card">
-<p>
-Situé à Belleville-en-Beaujolais, La Route des Vins vous accueille dans une ambiance chaleureuse et authentique. 
-Un lieu convivial pour boire un verre, séjourner ou profiter de services du quotidien.
-</p>
+<!-- 首页 -->
+<div class="hero">
+  <div>
+    <h1>LA ROUTE DES VINS</h1>
+    <p>Bar · Tabac · FDJ</p>
+    <p>Belleville-en-Beaujolais</p>
+  </div>
 </div>
-</section>
 
-<section>
-<h2>Bar</h2>
-<div class="card">
-<p>
-Ambiance bistrot traditionnelle, vins, bières et café.
-</p>
-<p><strong>Horaires :</strong></p>
-<p>Lundi, Mardi, Jeudi, Vendredi : 6h15 – 20h</p>
-<p>Mercredi : Fermé</p>
-<p>Samedi : 7h15 – 20h</p>
-<p>Dimanche : 7h15 – 14h</p>
+<!-- Bar -->
+<div class="section">
+  <h2>Le Bar</h2>
+  <div class="grid">
+    <img src="bar1.jpg">
+    <img src="bar2.jpg">
+  </div>
 </div>
-</section>
 
-<section>
-<h2>Tabac · FDJ · PMU</h2>
-<div class="card">
-<p>
-Tous les services tabac, jeux et paris disponibles sur place.
-</p>
-<p><strong>Horaires :</strong></p>
-<p>Lundi à Vendredi : 6h15 – 20h</p>
-<p>Week-end et jours fériés : 7h15 – 20h</p>
+<!-- Tabac -->
+<div class="section">
+  <h2>Tabac · Presse · FDJ</h2>
+  <div class="grid">
+    <img src="tabac1.jpg">
+    <img src="tabac2.jpg">
+  </div>
 </div>
-</section>
 
-<section>
-<h2>Hôtel</h2>
-<div class="card">
-<p>
-Ouvert du 1er avril au 31 octobre.
-</p>
-<p>
-Chambres simples dans un cadre calme.
-</p>
-<p><strong>Important :</strong> Pas d’ascenseur · Pas de climatisation · Pas de petit-déjeuner</p>
+<!-- Hotel（弱化） -->
+<div class="section">
+  <h2>Chambres</h2>
+  <p>Ouvert du 1er avril au 31 octobre</p>
 </div>
-</section>
 
-<section>
-<h2>Localisation</h2>
-<div class="card">
-<p>
-1 Place de la Gare<br>
-69220 Belleville-en-Beaujolais
-</p>
+<!-- Infos -->
+<div class="footer">
+  <h2>Informations</h2>
+  <p>📍 1 place de la gare<br>69220 Belleville-en-Beaujolais</p>
 
-<a class="button" href="https://www.google.com/maps?q=1+Place+de+la+Gare+69220+Belleville-en-Beaujolais" target="_blank">
-Voir sur Google Maps
-</a>
+  <p><strong>Bar :</strong><br>
+  Lun–Ven : 6h15–20h (fermé mercredi)<br>
+  Sam : 7h15–20h<br>
+  Dim : 7h15–14h</p>
+
+  <p><strong>Tabac :</strong><br>
+  Lun–Ven : 6h15–20h<br>
+  Week-end & jours fériés : 7h15–20h</p>
 </div>
-</section>
-
-<section>
-<h2>Contact</h2>
-<div class="card">
-<p><strong>Téléphone :</strong></p>
-<a class="button" href="tel:+33474663468">Appeler</a>
-</div>
-</section>
-
-<footer>
-<p>© La Route des Vins</p>
-</footer>
 
 </body>
 </html>
