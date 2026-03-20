@@ -13,34 +13,71 @@ body {
     color:white;
 }
 
-/* 顶部大图 */
+/* 导航 */
+nav {
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    padding:12px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a {
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-size:16px;
+}
+
+/* HERO */
 .hero {
+    position:relative;
     height:90vh;
     background:url("https://laroutedesvins.github.io/hero.jpg") center/cover no-repeat;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background-attachment: fixed;
 }
 
-.logo {
-    width:280px;
-    margin-bottom:20px;
+/* 黑色遮罩 */
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+/* 左上logo */
+.logo-top {
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:140px;
+    z-index:3;
+}
+
+/* 中间内容 */
+.hero-content {
+    position:relative;
+    z-index:2;
 }
 
 .hero h1 {
-    font-size:40px;
+    font-size:42px;
     margin:10px 0;
 }
 
-.hero p {
-    opacity:0.8;
+.subtitle {
+    font-size:18px;
+    opacity:0.9;
 }
 
 /* 按钮 */
 .btn {
+    display:inline-block;
     margin-top:20px;
     padding:12px 25px;
     background:#c0392b;
@@ -71,21 +108,9 @@ body {
     border-radius:8px;
 }
 
-/* 导航 */
-nav {
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(0,0,0,0.7);
-    padding:10px;
-    text-align:center;
-    z-index:1000;
-}
-
-nav a {
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
+/* infos */
+.info p {
+    margin:10px 0;
 }
 </style>
 </head>
@@ -102,13 +127,17 @@ nav a {
 <!-- HERO -->
 <div class="hero">
 
-<img src="https://laroutedesvins.github.io/logo-bar.png" class="logo">
+<div class="overlay"></div>
 
+<img src="https://laroutedesvins.github.io/logo-bar.png" class="logo-top">
+
+<div class="hero-content">
 <h1>La Route des Vins</h1>
-<p>Bar • Tabac • FDJ</p>
+<p class="subtitle">Bar • Tabac • FDJ</p>
 <p>Belleville-en-Beaujolais</p>
 
 <a class="btn" href="tel:+33474663468">📞 Appeler</a>
+</div>
 
 </div>
 
@@ -135,7 +164,7 @@ nav a {
 </div>
 
 <!-- INFOS -->
-<div id="infos" class="section">
+<div id="infos" class="section info">
 <h2>Infos pratiques</h2>
 
 <p>📍 1 place de la gare<br>69220 Belleville-en-Beaujolais</p>
