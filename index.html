@@ -3,186 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Route des Vins</title>
+
+<title>La Route des Vins | Bar Tabac Belleville</title>
 
 <style>
 body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#111;
-    color:white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: white;
 }
 
-/* 导航 */
-nav {
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(0,0,0,0.7);
-    padding:12px;
-    text-align:center;
-    z-index:1000;
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
 }
 
-nav a {
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-size:16px;
+header a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* HERO */
 .hero {
-    position:relative;
-    height:90vh;
-    background:url("https://laroutedesvins.github.io/hero.jpg") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+  height: 100vh;
+  background: url('hero.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* 黑色遮罩 */
-.overlay {
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.55);
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
 }
 
-/* 左上logo */
-.logo-top {
-    position:absolute;
-    top:20px;
-    left:20px;
-    width:140px;
-    z-index:3;
+.logo {
+  max-width: 280px;
+  margin-bottom: 20px;
 }
 
-/* 中间内容 */
-.hero-content {
-    position:relative;
-    z-index:2;
-}
-
-.hero h1 {
-    font-size:42px;
-    margin:10px 0;
+h1 {
+  font-size: 42px;
+  margin: 10px 0;
 }
 
 .subtitle {
-    font-size:18px;
-    opacity:0.9;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
-/* 按钮 */
 .btn {
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#c0392b;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #c94b2c;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-/* 区块 */
 .section {
-    padding:60px 20px;
-    text-align:center;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.section h2 {
-    margin-bottom:30px;
-}
-
-/* 图片网格 */
 .grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap:15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .grid img {
-    width:100%;
-    border-radius:8px;
-}
-
-/* infos */
-.info p {
-    margin:10px 0;
+  width: 100%;
+  border-radius: 12px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 导航 -->
-<nav>
-<a href="#bar">Bar</a>
-<a href="#tabac">Tabac</a>
-<a href="#infos">Infos</a>
-</nav>
+<header>
+  <a href="#bar">Bar</a>
+  <a href="#tabac">Tabac</a>
+  <a href="#infos">Infos</a>
+</header>
 
 <!-- HERO -->
 <div class="hero">
+  <div class="hero-overlay">
 
-<div class="overlay"></div>
+    <img src="logo-bar.png" class="logo">
 
-<img src="https://laroutedesvins.github.io/logo-bar.png" class="logo-top">
+    <h1>La Route des Vins</h1>
 
-<div class="hero-content">
-<h1>La Route des Vins</h1>
-<p class="subtitle">Bar • Tabac • FDJ</p>
-<p>Belleville-en-Beaujolais</p>
+    <div class="subtitle">
+      Bar • Tabac • FDJ<br>
+      Belleville-en-Beaujolais
+    </div>
 
-<a class="btn" href="tel:+33474663468">📞 Appeler</a>
-</div>
+    <a class="btn" href="tel:+33474663468">📞 Appeler</a>
 
+  </div>
 </div>
 
 <!-- BAR -->
 <div id="bar" class="section">
-<h2>Le Bar</h2>
-
-<div class="grid">
-<img src="https://laroutedesvins.github.io/bar1.jpg">
-<img src="https://laroutedesvins.github.io/bar2.jpg">
-</div>
-
+  <h2>Le Bar</h2>
+  <div class="grid">
+    <img src="bar1.png">
+    <img src="bar2.png">
+  </div>
 </div>
 
 <!-- TABAC -->
 <div id="tabac" class="section">
-<h2>Tabac • Presse • FDJ</h2>
-
-<div class="grid">
-<img src="https://laroutedesvins.github.io/tabac1.jpg">
-<img src="https://laroutedesvins.github.io/tabac2.jpg">
-</div>
-
+  <h2>Tabac • Presse • FDJ</h2>
+  <div class="grid">
+    <img src="tabac1.png">
+    <img src="tabac2.png">
+  </div>
 </div>
 
 <!-- INFOS -->
-<div id="infos" class="section info">
-<h2>Infos pratiques</h2>
+<div id="infos" class="section">
+  <h2>Infos pratiques</h2>
+  <p>
+    📍 1 place de la gare<br>
+    69220 Belleville-en-Beaujolais
+  </p>
 
-<p>📍 1 place de la gare<br>69220 Belleville-en-Beaujolais</p>
-
-<p>
-🕒 Bar :<br>
-Lundi – Vendredi : 6h15 – 20h<br>
-Mercredi : fermé<br>
-Samedi : 7h15 – 20h<br>
-Dimanche : 7h15 – 14h
-</p>
-
-<p>
-🚬 Tabac :<br>
-Lundi – Vendredi : 6h15 – 20h<br>
-Week-end & jours fériés : 7h15 – 20h
-</p>
-
+  <p>
+    🕒 Bar<br>
+    Lundi – Vendredi : 6h15 – 20h<br>
+    Mercredi : fermé<br>
+    Samedi : 7h15 – 20h<br>
+    Dimanche : 7h15 – 14h
+  </p>
 </div>
 
 </body>
