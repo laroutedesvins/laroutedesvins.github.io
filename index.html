@@ -3,153 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>La Route des Vins | Bar Tabac Belleville</title>
+<title>La Route des Vins</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0b0b;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
-  text-align: center;
-  z-index: 100;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    z-index: 1000;
 }
 
-header a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .hero {
-  height: 100vh;
-  background: url('hero.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    height: 80vh;
+    background: url("/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.hero-overlay {
-  background: rgba(0,0,0,0.5);
-  padding: 40px;
-  border-radius: 10px;
+.hero-box {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 12px;
 }
 
 .logo {
-  max-width: 280px;
-  margin-bottom: 20px;
+    max-width: 280px;
+    margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 42px;
-  margin: 10px 0;
+    font-size: 40px;
+    margin: 10px 0;
 }
 
-.subtitle {
-  font-size: 18px;
-  opacity: 0.8;
+p {
+    margin: 5px 0;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #c94b2c;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    background: #d65a31;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .section {
-  padding: 80px 20px;
-  text-align: center;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 900px;
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .grid img {
-  width: 100%;
-  border-radius: 12px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.highlight {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.info {
+    line-height: 1.6;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <a href="#bar">Bar</a>
-  <a href="#tabac">Tabac</a>
-  <a href="#infos">Infos</a>
-</header>
+<nav>
+<a href="#bar">Bar</a>
+<a href="#tabac">Tabac</a>
+<a href="#infos">Infos</a>
+</nav>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-overlay">
+    <div class="hero-box">
+        <img src="/logo-bar.png" class="logo">
+        <h1>La Route des Vins</h1>
+        <p>Tabac · FDJ · Bar</p>
+        <p>Belleville-en-Beaujolais</p>
 
-    <img src="logo-bar.png" class="logo">
-
-    <h1>La Route des Vins</h1>
-
-    <div class="subtitle">
-      Bar • Tabac • FDJ<br>
-      Belleville-en-Beaujolais
+        <a class="btn" href="tel:+33474663468">📞 Appeler</a>
     </div>
-
-    <a class="btn" href="tel:+33474663468">📞 Appeler</a>
-
-  </div>
 </div>
 
 <!-- BAR -->
 <div id="bar" class="section">
-  <h2>Le Bar</h2>
-  <div class="grid">
-    <img src="bar1.png">
-    <img src="bar2.png">
-  </div>
+<h2>Le Bar</h2>
+
+<div class="grid">
+<img src="/bar1.jpg" loading="lazy">
+<img src="/bar2.jpg" loading="lazy">
+</div>
 </div>
 
 <!-- TABAC -->
 <div id="tabac" class="section">
-  <h2>Tabac • Presse • FDJ</h2>
-  <div class="grid">
-    <img src="tabac1.png">
-    <img src="tabac2.png">
-  </div>
+<h2>Tabac · Presse · FDJ</h2>
+
+<p class="highlight">
+🚬 Cigarettes · Presse · FDJ · Vape · Accessoires
+</p>
+
+<div class="grid">
+<img src="/tabac1.jpg" loading="lazy">
+<img src="/tabac2.jpg" loading="lazy">
+</div>
 </div>
 
 <!-- INFOS -->
 <div id="infos" class="section">
-  <h2>Infos pratiques</h2>
-  <p>
-    📍 1 place de la gare<br>
-    69220 Belleville-en-Beaujolais
-  </p>
+<h2>Infos pratiques</h2>
 
-  <p>
-    🕒 Bar<br>
-    Lundi – Vendredi : 6h15 – 20h<br>
-    Mercredi : fermé<br>
-    Samedi : 7h15 – 20h<br>
-    Dimanche : 7h15 – 14h
-  </p>
+<div class="info">
+📍 1 place de la gare<br>
+69220 Belleville-en-Beaujolais<br><br>
+
+🕒 Bar :<br>
+Lundi – Vendredi : 6h15 – 20h<br>
+Mercredi : fermé<br>
+Samedi : 7h15 – 20h<br>
+Dimanche : 7h15 – 14h
+</div>
+
 </div>
 
 </body>
