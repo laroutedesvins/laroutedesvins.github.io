@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infos</title>
+<title>Infos pratiques</title>
 
 <style>
 body {
@@ -23,10 +23,34 @@ nav a {
   color:white;
   margin:0 15px;
   text-decoration:none;
+  font-weight:bold;
 }
 
 .container {
-  padding:40px;
+  padding:40px 20px;
+  max-width:700px;
+  margin:auto;
+}
+
+h1 {
+  margin-bottom:30px;
+}
+
+.block {
+  margin:30px 0;
+  padding:20px;
+  background:#111;
+  border-radius:12px;
+}
+
+.title {
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.text {
+  color:#ccc;
+  line-height:1.6;
 }
 </style>
 </head>
@@ -45,17 +69,48 @@ nav a {
 
 <h1>Infos pratiques</h1>
 
-<p>📍 1 place de la gare<br>
-69220 Belleville-en-Beaujolais</p>
+<div class="block">
+  <div class="title">📍 Adresse</div>
+  <div class="text">
+    1 place de la gare<br>
+    69220 Belleville-en-Beaujolais
+  </div>
+</div>
 
-<p>🕒 Horaires :</p>
+<div class="block">
+  <div class="title">🍷 Bar</div>
+  <div class="text">
+    Lundi – Vendredi : 6h15 – 20h<br>
+    Mercredi : fermé<br>
+    Samedi : 7h15 – 20h<br>
+    Dimanche : 7h15 – 14h
+  </div>
+</div>
 
-<p>
-Lundi – Vendredi : 6h15 – 20h<br>
-Mercredi : fermé<br>
-Samedi : 7h15 – 20h<br>
-Dimanche : 7h15 – 14h
-</p>
+<div class="block">
+  <div class="title">🚬 Tabac · Presse · FDJ</div>
+  <div class="text">
+    Lundi – Vendredi : 6h15 – 19h30<br>
+    Samedi : 7h15 – 19h30<br>
+    Dimanche : 7h15 – 12h30
+  </div>
+</div>
+
+<div class="block">
+  <div class="title">🛏️ Hôtel</div>
+  <div class="text">
+    Ouvert du 1er avril au 31 octobre<br>
+    Check-in : 14h – 20h<br>
+    Arrivée tardive possible sur appel
+  </div>
+</div>
+
+<div class="block">
+  <div class="title">📞 Contact</div>
+  <div class="text">
+    +33 4 74 66 34 68
+  </div>
+</div>
 
 </div>
 
