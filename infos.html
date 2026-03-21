@@ -11,12 +11,12 @@ body {
   font-family:Arial;
   background:#000;
   color:#fff;
-  text-align:center;
 }
 
 nav {
   background:#000;
   padding:15px;
+  text-align:center;
 }
 
 nav a {
@@ -27,20 +27,21 @@ nav a {
 }
 
 .container {
-  padding:40px 20px;
   max-width:700px;
   margin:auto;
+  padding:30px 20px;
 }
 
 h1 {
-  margin-bottom:30px;
+  text-align:center;
+  margin-bottom:20px;
 }
 
 .block {
-  margin:30px 0;
-  padding:20px;
   background:#111;
   border-radius:12px;
+  padding:20px;
+  margin:20px 0;
 }
 
 .title {
@@ -51,6 +52,16 @@ h1 {
 .text {
   color:#ccc;
   line-height:1.6;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 20px;
+  background:#c25b3c;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -70,26 +81,37 @@ h1 {
 <h1>Infos pratiques</h1>
 
 <div class="block">
-  <div class="title">📍 Adresse</div>
+  <div class="title">📍 Emplacement</div>
   <div class="text">
+    Situé à côté de la gare<br>
     1 place de la gare<br>
     69220 Belleville-en-Beaujolais
   </div>
+  <a href="https://maps.google.com/?q=1+place+de+la+gare+Belleville-en-Beaujolais" class="btn">
+    📍 Itinéraire
+  </a>
 </div>
 
 <div class="block">
   <div class="title">🍷 Bar</div>
   <div class="text">
+    ☀️ Matin : café & ambiance conviviale<br>
+    🍷 Journée : détente & boissons<br><br>
+
     Lundi – Vendredi : 6h15 – 20h<br>
     Mercredi : fermé<br>
     Samedi : 7h15 – 20h<br>
     Dimanche : 7h15 – 14h
   </div>
+  <a href="tel:+33474663468" class="btn">📞 Appeler</a>
 </div>
 
 <div class="block">
   <div class="title">🚬 Tabac · Presse · FDJ</div>
   <div class="text">
+    Tous vos services du quotidien<br>
+    Tabac · Presse · Jeux FDJ<br><br>
+
     Lundi – Vendredi : 6h15 – 19h30<br>
     Samedi : 7h15 – 19h30<br>
     Dimanche : 7h15 – 12h30
@@ -99,16 +121,22 @@ h1 {
 <div class="block">
   <div class="title">🛏️ Hôtel</div>
   <div class="text">
-    Ouvert du 1er avril au 31 octobre<br>
-    Check-in : 14h – 20h<br>
-    Arrivée tardive possible sur appel
+    Chambres simples et confortables<br>
+    Ambiance conviviale<br><br>
+
+    📅 Ouvert du 1er avril au 31 octobre<br>
+    ⏰ Check-in : 14h – 20h<br>
+    📞 Arrivée tardive possible sur appel
   </div>
+  <a href="tel:+33474663468" class="btn">📞 Réserver</a>
 </div>
 
 <div class="block">
-  <div class="title">📞 Contact</div>
+  <div class="title">⭐ Pourquoi venir ?</div>
   <div class="text">
-    +33 4 74 66 34 68
+    ✔ Accès facile (centre / gare)<br>
+    ✔ Ambiance locale authentique<br>
+    ✔ Service simple et efficace
   </div>
 </div>
 
