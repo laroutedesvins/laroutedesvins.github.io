@@ -2,143 +2,147 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infos pratiques</title>
+<title>Infos - La Route des Vins</title>
 
 <style>
 body {
-  margin:0;
-  font-family:Arial;
-  background:#000;
-  color:#fff;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
 }
 
+/* 导航 */
 nav {
-  background:#000;
-  padding:15px;
-  text-align:center;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+nav ul {
+    display:flex;
+    justify-content:center;
+    padding:15px;
+    margin:0;
+    list-style:none;
+}
+nav ul li {
+    margin:0 20px;
+}
+nav ul li a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-nav a {
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
-  font-weight:bold;
+/* 通用模块 */
+.section {
+    padding:80px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
 }
 
-.container {
-  max-width:700px;
-  margin:auto;
-  padding:30px 20px;
+h2 {
+    margin-bottom:20px;
 }
 
-h1 {
-  text-align:center;
-  margin-bottom:20px;
+/* 卡片 */
+.card {
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.block {
-  background:#111;
-  border-radius:12px;
-  padding:20px;
-  margin:20px 0;
-}
-
-.title {
-  font-size:22px;
-  margin-bottom:10px;
-}
-
-.text {
-  color:#ccc;
-  line-height:1.6;
-}
-
+/* 按钮 */
 .btn {
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 20px;
-  background:#c25b3c;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:black;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn:hover {
+    background:#c59d5f;
+}
+
+/* 图片 */
+.img {
+    width:100%;
+    max-width:500px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+/* 地图 */
+.map {
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+/* 联系信息 */
+.contact p {
+    margin:8px 0;
 }
 </style>
 </head>
 
 <body>
 
+<!-- 导航 -->
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="bar.html">Bar</a>
-  <a href="tabac.html">Tabac</a>
-  <a href="hotel.html">Hôtel</a>
-  <a href="infos.html">Infos</a>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="bar.html">Bar</a></li>
+<li><a href="tabac.html">Tabac</a></li>
+<li><a href="hotel.html">Hôtel</a></li>
+<li><a href="infos.html">Infos</a></li>
+</ul>
 </nav>
 
-<div class="container">
+<!-- 标题 -->
+<div class="section">
+<h2>Nous trouver</h2>
 
-<h1>Infos pratiques</h1>
+<div class="card contact">
+<p><strong>Adresse :</strong></p>
+<p>La Route des Vins<br>Belleville-en-Beaujolais</p>
 
-<div class="block">
-  <div class="title">📍 Emplacement</div>
-  <div class="text">
-    Situé à côté de la gare<br>
-    1 place de la gare<br>
-    69220 Belleville-en-Beaujolais
-  </div>
-  <a href="https://maps.google.com/?q=1+place+de+la+gare+Belleville-en-Beaujolais" class="btn">
-    📍 Itinéraire
-  </a>
+<p><strong>Téléphone :</strong></p>
+<a href="tel:0474663468" class="btn">📞 04 74 66 34 68</a>
+
+<p style="margin-top:15px;"><strong>Email :</strong></p>
+<p>laroutedesvins69220@gmail.com</p>
 </div>
 
-<div class="block">
-  <div class="title">🍷 Bar</div>
-  <div class="text">
-    ☀️ Matin : café & ambiance conviviale<br>
-    🍷 Journée : détente & boissons<br><br>
+<!-- 地图 -->
+<iframe class="map"
+src="https://www.google.com/maps?q=La+Route+des+Vins+Belleville-en-Beaujolais&output=embed">
+</iframe>
 
-    Lundi – Vendredi : 6h15 – 20h<br>
-    Mercredi : fermé<br>
-    Samedi : 7h15 – 20h<br>
-    Dimanche : 7h15 – 14h
-  </div>
-  <a href="tel:+33474663468" class="btn">📞 Appeler</a>
 </div>
 
-<div class="block">
-  <div class="title">🚬 Tabac · Presse · FDJ</div>
-  <div class="text">
-    Tous vos services du quotidien<br>
-    Tabac · Presse · Jeux FDJ<br><br>
+<!-- 停车 -->
+<div class="section">
+<h2>Parking</h2>
 
-    Lundi – Vendredi : 6h15 – 20h<br>
-    Week-end & jours fériés : 7h15 – 20h<br><br>
+<div class="card">
+<img src="parking.jpeg" class="img">
 
-    ✔ Ouvert toute l’année
-  </div>
-</div>
-
-<div class="block">
-  <div class="title">🛏️ Hôtel</div>
-  <div class="text">
-    Chambres simples et confortables<br>
-    Ambiance conviviale<br><br>
-
-    📅 Ouvert du 1er avril au 31 octobre<br>
-    ⏰ Check-in : 14h – 20h<br>
-    📞 Arrivée tardive possible sur appel
-  </div>
-  <a href="tel:+33474663468" class="btn">📞 Réserver</a>
-</div>
-
-<div class="block">
-  <div class="title">⭐ Pourquoi venir ?</div>
-  <div class="text">
-    ✔ Accès facile (centre / gare)<br>
-    ✔ Ambiance locale authentique<br>
-    ✔ Service simple et efficace
-  </div>
+<p>
+Parking privé gratuit disponible sur place.<br>
+Accès facile et stationnement juste devant l’établissement.
+</p>
 </div>
 
 </div>
