@@ -18,6 +18,7 @@ nav {
   top: 0;
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 
 nav ul {
@@ -65,6 +66,32 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/* 按钮 */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c59d5f;
+  transform: translateY(-2px);
+}
+
+/* Booking按钮 */
+.booking-btn {
+  background: #003580;
+}
+
+.booking-btn:hover {
+  background: #0057b8;
+}
+
 /* 图片 */
 .gallery {
   display: flex;
@@ -80,30 +107,20 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* 按钮 */
-.btn {
-  display: inline-block;
-  margin: 20px;
-  padding: 12px 25px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
+/* 优势 */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.btn:hover {
-  background: #c59d5f;
-  transform: translateY(-2px);
-}
-
-/* Booking按钮（重点） */
-.booking-btn {
-  background: #003580;
-}
-
-.booking-btn:hover {
-  background: #0057b8;
+.feature {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* 提示 */
@@ -123,9 +140,11 @@ nav ul li a:hover {
   right: 20px;
   background: #c59d5f;
   color: white;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
   text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 </style>
 
@@ -149,19 +168,28 @@ nav ul li a:hover {
 <h1>Notre Hôtel</h1>
 </div>
 
-<!-- 简介 -->
+<!-- 预订核心区 -->
 <div class="section">
-<h2>Chambres confortables</h2>
-<p>Profitez d’un séjour agréable dans notre hôtel à Belleville-en-Beaujolais.</p>
 
-<!-- ⭐ Booking按钮 -->
+<h2>Réservez votre séjour</h2>
+
+<p style="font-size:18px;">
+Réservation rapide et sécurisée via Booking
+</p>
+
 <a href="https://www.booking.com/hotel/fr/la-route-des-vins-belleville-en-beaujolais.fr.html?aid=1610680&label=belleville-en-beaujolais-yv4qxIvsBn*O6RveXUBGHgS590323341034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-848228418149%3Alp9049333%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YURcq_26dhSxO_kD28P4Rwg&sid=f809d9551d0e01a995e15dde386796c4&dest_id=900060716&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1774203792&srpvid=24118141dfd60b3f&type=total&ucfs=1&lang=fr&soz=1&lang_changed=1" target="_blank" class="btn booking-btn">
-Réserver sur Booking
+🔵 Réserver maintenant
 </a>
+
+<br>
 
 <a href="tel:0474663468" class="btn">
 Nous appeler
 </a>
+
+<p style="color:#c59d5f; font-weight:bold;">
+✔️ Chambres souvent complètes le week-end
+</p>
 
 </div>
 
@@ -176,7 +204,32 @@ Nous appeler
 
 </div>
 
-<!-- 注意事项（避免差评） -->
+<!-- 优势（重点） -->
+<div class="section">
+<h2>Pourquoi choisir notre hôtel</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>🅿️ Parking gratuit</h3>
+<p>Parking privé disponible gratuitement pour nos clients.</p>
+</div>
+
+<div class="feature">
+<h3>📍 Emplacement pratique</h3>
+<p>Situé à Belleville-en-Beaujolais, accès facile.</p>
+</div>
+
+<div class="feature">
+<h3>🏡 Ambiance conviviale</h3>
+<p>Accueil chaleureux et cadre simple et agréable.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- 注意事项 -->
 <div class="section">
 <h2>Informations importantes</h2>
 
@@ -184,12 +237,12 @@ Nous appeler
 ⚠️ Hôtel de style traditionnel<br>
 ❌ Pas de climatisation<br>
 ❌ Pas d’ascenseur<br>
-✔️ Accueil chaleureux et emplacement pratique
+✔️ Parking gratuit sur place
 </div>
 
 </div>
 
-<!-- 电话按钮 -->
+<!-- 电话 -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
