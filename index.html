@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>La Route des Vins - Bar Tabac Hôtel</title>
+<meta charset="UTF-8">
+<title>La Route des Vins</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-    /* 顶部导航 */
-    nav {
+/* 顶部导航 */
+nav {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.7);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 15px;
+  margin: 0;
 }
 
 nav ul li {
@@ -37,175 +35,159 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
 }
 
 nav ul li a:hover {
   color: #c59d5f;
 }
-    }
 
-    /* 首页大图 */
-    .hero {
-      height: 100vh;
-      background: url("hero.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 60px;
-    }
+/* 大图 */
+.hero {
+  height: 100vh;
+  background: url("hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
 
-    .hero-content {
-      background: rgba(255,255,255,0.85);
-      padding: 20px 40px;
-      border-radius: 10px;
-    }
+.hero-content {
+  background: rgba(255,255,255,0.85);
+  padding: 30px;
+  border-radius: 10px;
+}
 
-    .hero img {
-      max-width: 300px;
-    }
+.hero-content h1 {
+  margin: 10px 0;
+}
 
-    .hero h1 {
-      margin: 10px 0 0;
-      font-size: 24px;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-    /* 内容区 */
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+/* 通用区块 */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    .section h2 {
-      margin-bottom: 20px;
-    }
+/* 三大模块 */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+.card {
+  width: 300px;
+}
 
-    .btn:hover {
-      background: #444;
-    }
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  </style>
+.card h3 {
+  margin-top: 10px;
+}
+
+/* 联系方式 */
+.contact a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- 导航 -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="bar.html">Bar</a></li>
-      <li><a href="tabac.html">Tabac</a></li>
-      <li><a href="hotel.html">Hôtel</a></li>
-      <li><a href="infos.html">Infos</a></li>
-    </ul>
-  </nav>
+<!-- 导航 -->
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="bar.html">Bar</a></li>
+<li><a href="tabac.html">Tabac</a></li>
+<li><a href="hotel.html">Hôtel</a></li>
+<li><a href="infos.html">Infos</a></li>
+</ul>
+</nav>
 
-  <!-- 首页大图 -->
-  <div class="hero">
-    <div class="hero-content">
-      <img src="logo-bar.png" alt="Logo">
-      <h1>Bar • Tabac • Hôtel</h1>
-    </div>
-  </div>
-
-  <!-- 简介 -->
-  <div class="section">
-    <h2>Bienvenue chez La Route des Vins</h2>
-    <p>
-      Situé à Belleville-en-Beaujolais, notre établissement vous accueille dans une ambiance conviviale.
-    </p>
+<!-- 大图 -->
+<div class="hero">
+  <div class="hero-content">
+    <img src="logo-bar.png" style="width:200px;">
+    <h1>Bienvenue chez La Route des Vins</h1>
+    <p>Bar • Tabac • Hôtel à Belleville-en-Beaujolais</p>
     <a href="infos.html" class="btn">En savoir plus</a>
   </div>
-
-  <!-- 营业信息 -->
-  <div class="section" style="background:#f5f5f5;">
-    <h2>Horaires</h2>
-    <p>Lundi - Dimanche : 6h - 20h</p>
-    <p>Bar • Tabac • Hôtel</p>
-  </div>
-  <div class="section">
-
-  <h2>Contact rapide</h2>
-
-  <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
-
-    <a href="tel:+33474663468" 
-       style="padding:12px 25px; background:black; color:white; text-decoration:none; border-radius:5px;">
-       📞 Appeler
-    </a>
-
-    <a href="https://www.google.com/maps/search/?api=1&query=La+Route+des+Vins+Belleville-en-Beaujolais" 
-       target="_blank"
-       style="padding:12px 25px; background:#c59d5f; color:white; text-decoration:none; border-radius:5px;">
-       📍 Itinéraire
-    </a>
-
-    <a href="mailto:laroutedesvins69220@gmail.com" 
-       style="padding:12px 25px; background:#444; color:white; text-decoration:none; border-radius:5px;">
-       ✉️ Email
-    </a>
-
-  </div>
-
 </div>
-  <div class="section">
-  <h2>Notre établissement</h2>
 
-  <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
-
-    <img src="bar1.jpeg" style="width:300px; border-radius:10px;">
-    <img src="bar2.jpg" style="width:300px; border-radius:10px;">
-    <img src="hotel_1.jpg" style="width:300px; border-radius:10px;">
-    <img src="hotel_2.jpg" style="width:300px; border-radius:10px;">
-
-  </div>
-</div>
+<!-- 三大模块 -->
 <div class="section">
-  <h2>Nous trouver</h2>
+<h2>Nos services</h2>
 
-  <p><strong>Adresse :</strong><br>
-  La Route des Vins<br>
-  Belleville-en-Beaujolais</p>
+<div class="cards">
 
-  <br>
+<div class="card">
+<img src="bar1.jpg">
+<h3>Bar</h3>
+<p>Ambiance conviviale et sélection de boissons.</p>
+</div>
 
-  <p>
-    <strong>Téléphone :</strong><br>
-    <span style="font-weight:bold; color:#222;">
-      04 74 66 34 68
-    </span>
-  </p>
+<div class="card">
+<img src="tabac1.jpg">
+<h3>Tabac</h3>
+<p>FDJ, PMU et services de proximité.</p>
+</div>
 
-  <br>
-
-  <p>
-    <strong>Email :</strong><br>
-    <span style="font-weight:bold; color:#222;">
-      laroutedesvins69220@gmail.com
-    </span>
-  </p>
-
-  <br><br>
-
-  <iframe
-    src="https://www.google.com/maps?q=La+Route+des+Vins+Belleville-en-Beaujolais&output=embed"
-    width="100%"
-    height="300"
-    style="border:0; border-radius:10px;"
-    loading="lazy">
-  </iframe>
+<div class="card">
+<img src="hotel_1.jpg">
+<h3>Hôtel</h3>
+<p>Chambres confortables pour votre séjour.</p>
+</div>
 
 </div>
+</div>
+
+<!-- 营业时间 -->
+<div class="section" style="background:#f5f5f5;">
+<h2>Horaires</h2>
+<p>Lundi – Dimanche : 6h – 20h</p>
+<p>Bar • Tabac • Hôtel</p>
+</div>
+
+<!-- 联系 -->
+<div class="section contact">
+<h2>Nous trouver</h2>
+
+<p>
+<strong>Adresse :</strong><br>
+La Route des Vins<br>
+Belleville-en-Beaujolais
+</p>
+
+<p>
+<strong>Téléphone :</strong><br>
+04 74 66 34 68
+</p>
+
+<p>
+<strong>Email :</strong><br>
+<a href="mailto:laroutedesvins69220@gmail.com">
+laroutedesvins69220@gmail.com
+</a>
+</p>
+
+</div>
+
 </body>
 </html>
