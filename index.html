@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* 顶部导航 */
+/* 导航 */
 nav {
   position: fixed;
   width: 100%;
@@ -58,32 +58,34 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.hero-content h1 {
-  margin: 10px 0;
-}
-
+/* 按钮 */
 .btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   background: black;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
-/* 通用区块 */
+.btn:hover {
+  background: #c59d5f;
+}
+
+/* 区块 */
 .section {
   padding: 60px 20px;
   text-align: center;
 }
 
-/* 三大模块 */
+/* 三模块 */
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
@@ -92,6 +94,8 @@ nav ul li a:hover {
 
 .card img {
   width: 100%;
+  height: 200px;   /* ✅ 统一高度 */
+  object-fit: cover; /* ✅ 自动裁剪不变形 */
   border-radius: 10px;
 }
 
@@ -99,13 +103,15 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
-/* 联系方式 */
-.contact a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
+/* 地图 */
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  margin-top: 20px;
 }
 </style>
+
 </head>
 
 <body>
@@ -121,7 +127,7 @@ nav ul li a:hover {
 </ul>
 </nav>
 
-<!-- 大图 -->
+<!-- 首页大图 -->
 <div class="hero">
   <div class="hero-content">
     <img src="logo-bar.png" style="width:200px;">
@@ -131,7 +137,7 @@ nav ul li a:hover {
   </div>
 </div>
 
-<!-- 三大模块 -->
+<!-- 三大业务 -->
 <div class="section">
 <h2>Nos services</h2>
 
@@ -141,18 +147,21 @@ nav ul li a:hover {
 <img src="bar1.jpg">
 <h3>Bar</h3>
 <p>Ambiance conviviale et sélection de boissons.</p>
+<a href="bar.html" class="btn">Découvrir</a>
 </div>
 
 <div class="card">
 <img src="tabac1.jpg">
 <h3>Tabac</h3>
 <p>FDJ, PMU et services de proximité.</p>
+<a href="tabac.html" class="btn">Voir plus</a>
 </div>
 
 <div class="card">
 <img src="hotel_1.jpg">
 <h3>Hôtel</h3>
 <p>Chambres confortables pour votre séjour.</p>
+<a href="hotel.html" class="btn">Réserver</a>
 </div>
 
 </div>
@@ -166,26 +175,22 @@ nav ul li a:hover {
 </div>
 
 <!-- 联系 -->
-<div class="section contact">
+<div class="section">
 <h2>Nous trouver</h2>
 
-<p>
-<strong>Adresse :</strong><br>
+<p><strong>Adresse :</strong><br>
 La Route des Vins<br>
-Belleville-en-Beaujolais
-</p>
+Belleville-en-Beaujolais</p>
 
-<p>
-<strong>Téléphone :</strong><br>
-04 74 66 34 68
-</p>
+<p><strong>Téléphone :</strong><br>
+04 74 66 34 68</p>
 
-<p>
-<strong>Email :</strong><br>
-<a href="mailto:laroutedesvins69220@gmail.com">
-laroutedesvins69220@gmail.com
-</a>
-</p>
+<p><strong>Email :</strong><br>
+laroutedesvins69220@gmail.com</p>
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=La+Route+des+Vins+Belleville-en-Beaujolais&output=embed"></iframe>
+</div>
 
 </div>
 
