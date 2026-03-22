@@ -1,81 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Route des Vins</title>
+  <meta charset="UTF-8">
+  <title>La Route des Vins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin:0;
-  font-family:Arial;
-  background:#000;
-  color:#fff;
-  text-align:center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-nav {
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(0,0,0,0.8);
-  padding:15px;
-}
+    /* 顶部导航 */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      z-index: 10;
+    }
 
-nav a {
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
-  font-weight:bold;
-}
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.hero {
-  height:100vh;
-  background:url("hero.jpg") center/cover;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
+    /* 封面 */
+    .hero {
+      height: 100vh;
+      background: url("images/hotel.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-.logo {
-  width:220px;
-  margin:auto;
-}
+    .hero img {
+      width: 250px;
+      background: white;
+      padding: 10px;
+    }
 
-h1 {
-  font-size:42px;
-}
+    .hero h1 {
+      color: white;
+      margin-top: 20px;
+    }
 
-.btn {
-  margin-top:20px;
-  background:#c25b3c;
-  padding:15px 25px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-  display:inline-block;
-}
-</style>
+    .hero p {
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* 三个模块 */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .services div {
+      max-width: 250px;
+    }
+
+    .services a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #a0522d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 按钮 */
+    .buttons {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .call {
+      background: #a0522d;
+    }
+
+    .map {
+      background: #333;
+    }
+
+    /* footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- 导航 -->
 <nav>
   <a href="index.html">Accueil</a>
   <a href="bar.html">Bar</a>
   <a href="tabac.html">Tabac</a>
   <a href="hotel.html">Hôtel</a>
-  <a href="infos.html">Infos</a>
+  <a href="info.html">Infos</a>
 </nav>
 
+<!-- 首页封面 -->
 <div class="hero">
-  <img src="logo-bar.png" class="logo">
-  <h1>La Route des Vins</h1>
-  <p>Bar · Tabac · FDJ</p>
-  <p>Belleville-en-Beaujolais</p>
 
-  <a href="tel:+33474663468" class="btn">📞 Appeler</a>
+  <!-- Logo -->
+  <img src="images/logo.png" alt="Logo">
+
+  <h1>Bar · Tabac · Hôtel</h1>
+  <p>
+    Au cœur de Belleville-en-Beaujolais<br>
+    Ambiance conviviale et services du quotidien
+  </p>
+
 </div>
+
+<!-- 三大服务 -->
+<div class="services">
+
+  <div>
+    <h3>🍷 Bar</h3>
+    <p>Convivialité et détente</p>
+    <a href="bar.html">Découvrir</a>
+  </div>
+
+  <div>
+    <h3>🚬 Tabac</h3>
+    <p>Services du quotidien</p>
+    <a href="tabac.html">Voir les services</a>
+  </div>
+
+  <div>
+    <h3>🛏 Hôtel</h3>
+    <p>Chambres simples et confortables</p>
+    <a href="hotel.html">Voir les chambres</a>
+  </div>
+
+</div>
+
+<!-- 按钮 -->
+<div class="buttons">
+
+  <a href="tel:+33400000000" class="call">
+    📞 Appeler
+  </a>
+
+  <a href="https://maps.google.com" class="map">
+    📍 Itinéraire
+  </a>
+
+</div>
+
+<!-- 底部 -->
+<footer>
+  La Route des Vins<br>
+  Bar · Tabac · Hôtel<br>
+  Belleville-en-Beaujolais
+</footer>
 
 </body>
 </html>
