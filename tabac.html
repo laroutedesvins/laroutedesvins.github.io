@@ -2,64 +2,210 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tabac</title>
+<title>Tabac - La Route des Vins</title>
 
 <style>
 body {
-  margin:0;
-  font-family:Arial;
-  background:#000;
-  color:#fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
 }
 
+/* 导航 */
 nav {
-  background:#000;
-  padding:15px;
-  text-align:center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
 }
 
-nav a {
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 0;
 }
 
-h1 {
-  text-align:center;
-  margin:30px 0;
+nav ul li {
+  margin: 0 20px;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-  padding:20px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-img {
-  width:100%;
-  border-radius:10px;
+nav ul li a:hover {
+  color: #c59d5f;
+}
+
+/* 大图 */
+.hero {
+  height: 60vh;
+  background: url("tabac1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* 区块 */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* 图片 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 服务卡片 */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  margin-bottom: 10px;
+  color: #c59d5f;
+}
+
+/* 按钮 */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #c59d5f;
+}
+
+/* 电话按钮 */
+.call-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #c59d5f;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
 }
 </style>
+
 </head>
 
 <body>
 
+<!-- 导航 -->
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="bar.html">Bar</a>
-  <a href="tabac.html">Tabac</a>
-  <a href="hotel.html">Hôtel</a>
-  <a href="infos.html">Infos</a>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="bar.html">Bar</a></li>
+<li><a href="tabac.html">Tabac</a></li>
+<li><a href="hotel.html">Hôtel</a></li>
+<li><a href="infos.html">Infos</a></li>
+</ul>
 </nav>
 
-<h1>Tabac · Presse · FDJ</h1>
-
-<div class="grid">
-  <img src="tabac1.jpg">
-  <img src="tabac2.jpg">
+<!-- 大图 -->
+<div class="hero">
+<h1>Tabac & Services</h1>
 </div>
+
+<!-- 简介 -->
+<div class="section">
+<h2>Services de proximité</h2>
+<p>Votre tabac à Belleville-en-Beaujolais pour tous vos besoins quotidiens.</p>
+</div>
+
+<!-- 图片 -->
+<div class="section">
+<h2>Notre espace</h2>
+
+<div class="gallery">
+<img src="tabac1.jpg">
+<img src="tabac2.jpg">
+</div>
+
+</div>
+
+<!-- 服务 -->
+<div class="section">
+<h2>Nos services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>🚬 Tabac</h3>
+<p>Cigarettes, tabac, accessoires.</p>
+</div>
+
+<div class="service">
+<h3>🎯 FDJ</h3>
+<p>Jeux à gratter et Loto.</p>
+</div>
+
+<div class="service">
+<h3>🏇 PMU</h3>
+<p>Paris sportifs et hippiques.</p>
+</div>
+
+<div class="service">
+<h3>📦 Services</h3>
+<p>Paiements, recharges, services locaux.</p>
+</div>
+
+</div>
+
+<a href="tel:0474663468" class="btn">Nous appeler</a>
+
+</div>
+
+<!-- 电话按钮 -->
+<a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
 </html>
