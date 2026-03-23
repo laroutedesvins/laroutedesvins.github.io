@@ -2,13 +2,50 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Hôtel - La Route des Vins</title>
+
+<title>Hôtel à Belleville-en-Beaujolais | Réservation & Parking gratuit – La Route des Vins</title>
+
+<meta name="description" content="Hôtel à Belleville-en-Beaujolais face à la gare. Réservation via Booking, parking privé gratuit, chambres simples et confortables. Ouvert du 1er avril au 31 octobre.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
 <link rel="icon" type="image/png" href="favicon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hôtel La Route des Vins",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Place de la Gare",
+    "addressLocality": "Belleville-en-Beaujolais",
+    "postalCode": "69220",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33474663468",
+  "description": "Hôtel à Belleville-en-Beaujolais avec parking privé gratuit, situé face à la gare. Ouvert du 1er avril au 31 octobre.",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Parking gratuit",
+      "value": true
+    }
+  ]
+}
+</script>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
+  color: #222;
 }
 
 /* 导航 */
@@ -16,138 +53,187 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.8);
   z-index: 1000;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
   margin: 0;
+  list-style: none;
 }
 
-nav ul li {
-  margin: 0 20px;
+nav li {
+  margin: 5px 10px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-nav ul li a:hover {
-  color: #c59d5f;
-}
-
-/* 大图 */
+/* HERO */
 .hero {
   height: 60vh;
   background: url("hotel1.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  text-align: center;
+  padding: 80px 20px 20px;
+}
+
+.hero-box {
+  background: rgba(255,255,255,0.92);
+  padding: 22px;
+  border-radius: 10px;
+  max-width: 90%;
 }
 
 .hero h1 {
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 20px 30px;
-  border-radius: 10px;
+  margin: 0 0 10px;
+  font-size: 24px;
 }
 
-/* 区块 */
+.hero p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* 通用区块 */
 .section {
-  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 15px;
   text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
 }
 
 /* 按钮 */
 .btn {
   display: inline-block;
-  margin: 10px;
-  padding: 14px 28px;
-  background: black;
-  color: white;
+  margin: 10px 8px 0;
+  padding: 12px 22px;
   text-decoration: none;
   border-radius: 6px;
-  transition: 0.3s;
+  color: white;
+  background: black;
+  font-weight: bold;
 }
 
 .btn:hover {
   background: #c59d5f;
-  transform: translateY(-2px);
 }
 
-/* Booking按钮 */
 .booking-btn {
   background: #003580;
 }
 
 .booking-btn:hover {
-  background: #0057b8;
+  background: #0051a8;
 }
 
 /* 图片 */
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 18px;
   justify-content: center;
-  gap: 20px;
 }
 
 .gallery img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 340px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* 优势 */
+/* 卖点卡片 */
 .features {
   display: flex;
   flex-wrap: wrap;
+  gap: 18px;
   justify-content: center;
-  gap: 20px;
 }
 
 .feature {
   background: white;
+  width: 100%;
+  max-width: 280px;
   padding: 20px;
-  width: 260px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* 提示 */
+.feature h3 {
+  margin-top: 0;
+  color: #c59d5f;
+}
+
+/* 温馨提示 */
 .notice {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 15px;
-  background: #fff3cd;
+  max-width: 700px;
+  margin: auto;
+  background: #fff7e2;
   border-radius: 10px;
-  font-size: 14px;
+  padding: 18px;
+  line-height: 1.7;
 }
 
-/* 电话按钮 */
+/* 地图 */
+.map iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* 浮动电话按钮 */
 .call-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background: #c59d5f;
   color: white;
-  padding: 16px;
+  padding: 12px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 大屏优化 */
+@media (min-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .map iframe {
+    height: 400px;
+  }
 }
 </style>
-
 </head>
 
 <body>
@@ -163,83 +249,108 @@ nav ul li a:hover {
 </ul>
 </nav>
 
-<!-- 大图 -->
+<!-- HERO -->
 <div class="hero">
-<h1>Notre Hôtel</h1>
+  <div class="hero-box">
+    <h1>Hôtel à Belleville-en-Beaujolais</h1>
+    <p>Face à la gare · Parking privé gratuit · Réservation rapide</p>
+  </div>
 </div>
 
 <!-- 预订核心区 -->
 <div class="section">
+  <h2>Réservez votre séjour</h2>
 
-<h2>Réservez votre séjour</h2>
+  <p>
+    Hôtel situé au <strong>1 Place de la Gare</strong>, idéal pour un séjour pratique à Belleville-en-Beaujolais.
+  </p>
 
-<p style="font-size:18px;">
-Réservation rapide et sécurisée via Booking
-</p>
+  <p>
+    Réservation simple via Booking ou par téléphone.
+  </p>
 
-<a href="https://www.booking.com/hotel/fr/la-route-des-vins-belleville-en-beaujolais.fr.html?aid=1610680&label=belleville-en-beaujolais-yv4qxIvsBn*O6RveXUBGHgS590323341034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-848228418149%3Alp9049333%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YURcq_26dhSxO_kD28P4Rwg&sid=f809d9551d0e01a995e15dde386796c4&dest_id=900060716&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1774203792&srpvid=24118141dfd60b3f&type=total&ucfs=1&lang=fr&soz=1&lang_changed=1" target="_blank" class="btn booking-btn">
-🔵 Réserver maintenant
-</a>
+  <a href="https://www.booking.com/hotel/fr/la-route-des-vins-belleville-en-beaujolais.fr.html?aid=1610680&label=belleville-en-beaujolais-yv4qxIvsBn*O6RveXUBGHgS590323341034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-848228418149%3Alp9049333%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YURcq_26dhSxO_kD28P4Rwg&sid=f809d9551d0e01a995e15dde386796c4&dest_id=900060716&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1774203792&srpvid=24118141dfd60b3f&type=total&ucfs=1&lang=fr&soz=1&lang_changed=1" target="_blank" class="btn booking-btn">Réserver sur Booking</a>
+  <a href="tel:0474663468" class="btn">Nous appeler</a>
 
-<br>
+  <p style="margin-top:18px; color:#c59d5f; font-weight:bold;">
+    Chambres souvent demandées le week-end
+  </p>
+</div>
 
-<a href="tel:0474663468" class="btn">
-Nous appeler
-</a>
+<!-- SEO内容 -->
+<div class="section">
+  <h2>Notre hôtel face à la gare</h2>
 
-<p style="color:#c59d5f; font-weight:bold;">
-✔️ Chambres souvent complètes le week-end
-</p>
+  <p>
+    Notre hôtel à Belleville-en-Beaujolais accueille les voyageurs et professionnels dans un cadre simple, pratique et chaleureux.
+  </p>
 
+  <p>
+    Situé face à la gare, au 1 Place de la Gare, il permet un accès facile et un stationnement pratique grâce à notre
+    <strong>parking privé gratuit</strong>.
+  </p>
+
+  <p>
+    Hôtel ouvert du <strong>1er avril au 31 octobre</strong>, avec arrivée entre <strong>14h et 20h</strong>.
+  </p>
 </div>
 
 <!-- 图片 -->
 <div class="section">
-<h2>Nos chambres</h2>
+  <h2>Nos chambres</h2>
 
-<div class="gallery">
-<img src="hotel1.jpeg">
-<img src="hotel2.jpg">
+  <div class="gallery">
+    <img src="hotel1.jpeg" alt="Chambre de l'hôtel La Route des Vins">
+    <img src="hotel2.jpg" alt="Chambre confortable à Belleville-en-Beaujolais">
+  </div>
 </div>
 
-</div>
-
-<!-- 优势（重点） -->
+<!-- 卖点 -->
 <div class="section">
-<h2>Pourquoi choisir notre hôtel</h2>
+  <h2>Pourquoi choisir notre hôtel</h2>
 
-<div class="features">
+  <div class="features">
+    <div class="feature">
+      <h3>🅿️ Parking gratuit</h3>
+      <p>Parking privé gratuit disponible sur place pour nos clients.</p>
+    </div>
 
-<div class="feature">
-<h3>🅿️ Parking gratuit</h3>
-<p>Parking privé disponible gratuitement pour nos clients.</p>
+    <div class="feature">
+      <h3>📍 Emplacement pratique</h3>
+      <p>Situé face à la gare, accès simple pour voyageurs et séjours de passage.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🏨 Séjour simple et confortable</h3>
+      <p>Chambres pratiques pour une étape ou un court séjour à Belleville-en-Beaujolais.</p>
+    </div>
+  </div>
 </div>
 
-<div class="feature">
-<h3>📍 Emplacement pratique</h3>
-<p>Situé à Belleville-en-Beaujolais, accès facile.</p>
-</div>
-
-<div class="feature">
-<h3>🏡 Ambiance conviviale</h3>
-<p>Accueil chaleureux et cadre simple et agréable.</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- 注意事项 -->
+<!-- Infos importantes -->
 <div class="section">
-<h2>Informations importantes</h2>
+  <h2>Informations importantes</h2>
 
-<div class="notice">
-⚠️ Hôtel de style traditionnel<br>
-❌ Pas de climatisation<br>
-❌ Pas d’ascenseur<br>
-✔️ Parking gratuit sur place
+  <div class="notice">
+    Hôtel ouvert du 1er avril au 31 octobre.<br>
+    Check-in : 14h – 20h.<br>
+    Arrivée tardive possible sur demande.<br><br>
+
+    Hôtel de style traditionnel.<br>
+    Pas de climatisation.<br>
+    Pas d’ascenseur.
+  </div>
 </div>
 
+<!-- 地图 -->
+<div class="section">
+  <h2>Nous trouver</h2>
+
+  <p>1 Place de la Gare – 69220 Belleville-en-Beaujolais</p>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=1+Place+de+la+Gare+Belleville-en-Beaujolais&output=embed"></iframe>
+  </div>
 </div>
 
 <!-- 电话 -->
