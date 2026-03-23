@@ -3,14 +3,55 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Tabac FDJ PMU à Belleville-en-Beaujolais | Bar La Route des Vins</title>
+<title>Tabac FDJ Vapotage à Belleville-en-Beaujolais | Ouvert 7j/7 – La Route des Vins</title>
 
-<meta name="description" content="Tabac FDJ PMU à Belleville-en-Beaujolais ouvert toute l’année, y compris jours fériés. Bar convivial avec parking gratuit à proximité de la gare.">
+<meta name="description" content="Tabac FDJ et vapotage à Belleville-en-Beaujolais ouvert 7j/7, y compris dimanches et jours fériés. Cigarettes, e-cigarettes, services de proximité face à la gare.">
+
+<meta name="keywords" content="tabac belleville en beaujolais, vapotage belleville, cigarette électronique belleville, fdj belleville, tabac ouvert dimanche, tabac ouvert jours fériés">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
 
 <link rel="icon" type="image/png" href="favicon.png">
+
+<!-- 🔥 高级SEO结构化数据 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TobaccoStore",
+ "name": "TABAC LA ROUTE DES VINS",
+ "image": "https://laroutedesvins.github.io/hero.jpg",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "1 place de la gare",
+   "addressLocality": "Belleville-en-Beaujolais",
+   "postalCode": "69220",
+   "addressCountry": "FR"
+ },
+ "telephone": "+33474663468",
+ "openingHours": "Mo-Su 06:15-20:00",
+ "description": "Tabac FDJ et vapotage ouvert 7j/7 à Belleville-en-Beaujolais, y compris jours fériés.",
+ "priceRange": "€"
+}
+</script>
+
 <style>
-body {
+
+/* 🔥 防止页面缩小（核心修复） */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 基础 */
+body {
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
@@ -22,7 +63,6 @@ nav {
   top: 0;
   z-index: 1000;
   background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
 }
 
 nav ul {
@@ -41,7 +81,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -63,7 +102,6 @@ nav ul li a:hover {
   background: rgba(255,255,255,0.9);
   padding: 40px;
   border-radius: 12px;
-  animation: fadeIn 1.5s ease;
 }
 
 .hero-content h1 {
@@ -79,12 +117,10 @@ nav ul li a:hover {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  transition: 0.3s;
 }
 
 .btn:hover {
   background: #c59d5f;
-  transform: translateY(-2px);
 }
 
 /* 区块 */
@@ -107,51 +143,12 @@ nav ul li a:hover {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-.card h3 {
-  margin: 15px 0 5px;
-}
-
-.card p {
-  padding: 0 15px;
-}
-
-.card .btn {
-  margin: 20px;
-}
-
-/* 客户评价 */
-.reviews {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.review {
-  width: 280px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.stars {
-  color: #c59d5f;
-  font-size: 18px;
 }
 
 /* 地图 */
@@ -163,32 +160,20 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* 电话浮动按钮 */
+/* 电话按钮 */
 .call-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #c59d5f;
   color: white;
-  padding: 15px 18px;
+  padding: 15px;
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: 0.3s;
 }
 
-.call-btn:hover {
-  transform: scale(1.1);
-}
-
-/* 动画 */
-@keyframes fadeIn {
-  from {opacity:0; transform:translateY(20px);}
-  to {opacity:1; transform:translateY(0);}
-}
 </style>
-
 </head>
 
 <body>
@@ -207,10 +192,9 @@ nav ul li a:hover {
 <!-- 首页 -->
 <div class="hero">
   <div class="hero-content">
-    <img src="logo-bar.png" style="width:200px;">
-    <h1>Bienvenue chez La Route des Vins</h1>
-    <p>Bar • Tabac • Hôtel à Belleville-en-Beaujolais</p>
-    <a href="infos.html" class="btn">En savoir plus</a>
+    <h1>Tabac FDJ Vapotage à Belleville-en-Beaujolais</h1>
+    <p>Ouvert 7j/7 – même dimanches et jours fériés</p>
+    <a href="tabac.html" class="btn">Voir le tabac</a>
   </div>
 </div>
 
@@ -223,83 +207,55 @@ nav ul li a:hover {
 <div class="card">
 <img src="bar1.jpeg">
 <h3>Bar</h3>
-<p>Ambiance conviviale et sélection de boissons.</p>
+<p>Ambiance conviviale.</p>
 <a href="bar.html" class="btn">Découvrir</a>
 </div>
 
 <div class="card">
 <img src="tabac1.jpg">
 <h3>Tabac</h3>
-<p>FDJ, VAP et services de proximité.</p>
+<p>FDJ, vapotage, ouvert tous les jours.</p>
 <a href="tabac.html" class="btn">Voir plus</a>
 </div>
 
 <div class="card">
 <img src="hotel1.jpeg">
 <h3>Hôtel</h3>
-<p>Chambres confortables pour votre séjour.</p>
+<p>Chambres simples et confortables.</p>
 <a href="hotel.html" class="btn">Réserver</a>
 </div>
 
 </div>
 </div>
 
-<!-- 营业时间 -->
-<div class="section" style="background:#f5f5f5;">
-<h2>Horaires</h2>
-<p>Lundi – Dimanche : 6h – 20h</p>
-<p>Bar • Tabac • Hôtel</p>
-</div>
-
-<!-- 客户评价 -->
+<!-- SEO强化区（关键） -->
 <div class="section">
-<h2>Avis clients</h2>
+<h2>Tabac à Belleville-en-Beaujolais</h2>
 
-<div class="reviews">
+<p>
+Notre tabac FDJ à Belleville-en-Beaujolais est ouvert tous les jours, y compris dimanches et jours fériés.
+Nous proposons cigarettes, vapotage (e-cigarettes), jeux FDJ et services de proximité.
+</p>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>"Super accueil, ambiance chaleureuse !"</p>
-<strong>- Client</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>"Chambre propre et confortable, je recommande."</p>
-<strong>- Voyageur</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★☆</div>
-<p>"Service rapide et pratique pour le tabac."</p>
-<strong>- Habitué</strong>
-</div>
+<p>
+Situé face à la gare, La Route des Vins est idéal pour vos achats rapides, que vous soyez de passage ou habitant local.
+</p>
 
 </div>
 
-</div>
-
-<!-- 联系 -->
+<!-- 地图 -->
 <div class="section">
 <h2>Nous trouver</h2>
 
-<p><strong>Adresse :</strong><br>
-La Route des Vins<br>
-Belleville-en-Beaujolais</p>
-
-<p><strong>Téléphone :</strong><br>
-04 74 66 34 68</p>
-
-<p><strong>Email :</strong><br>
-laroutedesvins69220@gmail.com</p>
+<p>1 place de la gare – 69220 Belleville-en-Beaujolais</p>
 
 <div class="map">
-<iframe src="https://www.google.com/maps?q=La+Route+des+Vins+Belleville-en-Beaujolais&output=embed"></iframe>
+<iframe src="https://www.google.com/maps?q=1+place+de+la+gare+Belleville-en-Beaujolais&output=embed"></iframe>
 </div>
 
 </div>
 
-<!-- 📞 电话按钮 -->
+<!-- 电话按钮 -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
