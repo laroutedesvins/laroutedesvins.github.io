@@ -5,26 +5,24 @@
 
 <title>Tabac FDJ Vapotage Belleville-en-Beaujolais | La Route des Vins</title>
 
-<meta name="description" content="Tabac FDJ et vapotage à Belleville-en-Beaujolais ouvert toute l’année, y compris jours fériés. Cigarettes, e-cigarettes et services de proximité près de la gare.">
+<meta name="description" content="Tabac FDJ et vapotage à Belleville-en-Beaujolais ouvert toute l’année, y compris dimanches et jours fériés. Cigarettes, e-cigarettes et services de proximité près de la gare.">
 
-<meta name="keywords" content="tabac belleville en beaujolais, vapotage belleville, cigarette électronique belleville, fdj belleville, tabac ouvert dimanche, tabac ouvert jours fériés">
+<meta name="keywords" content="tabac belleville en beaujolais, vapotage belleville, cigarette électronique belleville, fdj belleville, tabac ouvert dimanche">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
-<meta name="author" content="La Route des Vins">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
 <style>
 
-/* 全局 */
+/* ===== 全局 ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
 
-/* 导航 */
+/* ===== 导航 ===== */
 nav {
   position: fixed;
   width: 100%;
@@ -56,14 +54,14 @@ nav ul li a:hover {
   color: #c59d5f;
 }
 
-/* 大图 */
+/* ===== 大图（优化比例） ===== */
 .hero {
-  height: 60vh;
+  height: 45vh;
   background: url("tabac1.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 60px;
   text-align: center;
   color: white;
@@ -71,18 +69,32 @@ nav ul li a:hover {
 }
 
 .hero h1 {
+  font-size: 32px;
   background: rgba(0,0,0,0.6);
   padding: 15px 25px;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-/* 区块 */
+.hero p {
+  max-width: 700px;
+  font-size: 16px;
+}
+
+/* ===== 区块 ===== */
 .section {
   padding: 60px 20px;
   text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* 图片 */
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ===== 图片 ===== */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -91,63 +103,64 @@ nav ul li a:hover {
 }
 
 .gallery img {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* 服务 */
+/* ===== 服务 ===== */
 .services {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .service {
   background: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .service:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .service h3 {
   color: #c59d5f;
 }
 
-/* 按钮 */
+/* ===== 按钮 ===== */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
+  margin-top: 25px;
+  padding: 14px 28px;
   background: black;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .btn:hover {
   background: #c59d5f;
 }
 
-/* 电话按钮 */
+/* ===== 电话按钮 ===== */
 .call-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #c59d5f;
   color: white;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
   text-decoration: none;
   font-size: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -170,13 +183,9 @@ nav ul li a:hover {
 <div class="hero">
 <h1>Tabac FDJ Vapotage à Belleville-en-Beaujolais</h1>
 
-<p>
-Notre tabac est ouvert toute l’année, y compris dimanches et jours fériés.
-</p>
+<p>Ouvert toute l’année, y compris dimanches et jours fériés.</p>
 
-<p>
-Situé face à la gare, service rapide pour clients locaux et de passage.
-</p>
+<p>Situé face à la gare, service rapide pour clients locaux et de passage.</p>
 </div>
 
 <!-- 简介 -->
@@ -188,10 +197,12 @@ Situé face à la gare, service rapide pour clients locaux et de passage.
 <!-- 图片 -->
 <div class="section">
 <h2>Notre espace</h2>
+
 <div class="gallery">
 <img src="tabac1.jpg">
 <img src="tabac2.jpg">
 </div>
+
 </div>
 
 <!-- 服务 -->
@@ -212,7 +223,7 @@ Situé face à la gare, service rapide pour clients locaux et de passage.
 
 <div class="service">
 <h3>💨 Vapotage</h3>
-<p>E-cigarettes, e-liquides et accessoires.</p>
+<p>E-cigarettes et e-liquides.</p>
 </div>
 
 <div class="service">
