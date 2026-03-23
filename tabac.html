@@ -3,19 +3,36 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Tabac FDJ Vapotage Belleville-en-Beaujolais | La Route des Vins</title>
+<title>Tabac Belleville-en-Beaujolais | FDJ Vapotage ouvert 7j/7 – La Route des Vins</title>
 
-<meta name="description" content="Tabac FDJ et vapotage à Belleville-en-Beaujolais ouvert toute l’année, y compris dimanches et jours fériés. Cigarettes, e-cigarettes et services de proximité près de la gare.">
-
-<meta name="keywords" content="tabac belleville en beaujolais, vapotage belleville, cigarette électronique belleville, fdj belleville, tabac ouvert dimanche">
+<meta name="description" content="Tabac FDJ et vapotage à Belleville-en-Beaujolais ouvert 7j/7, dimanches et jours fériés. Cigarettes, e-cigarettes, jeux FDJ. Situé face à la gare.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
+<!-- ⭐ SEO结构化（超关键） -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TobaccoStore",
+ "name": "TABAC LA ROUTE DES VINS",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "43 Rue Maréchal Foch",
+   "addressLocality": "Belleville-en-Beaujolais",
+   "postalCode": "69220",
+   "addressCountry": "FR"
+ },
+ "telephone": "+33474663468",
+ "openingHours": "Mo-Su 06:15-20:00"
+}
+</script>
+
 <style>
 
-/* ===== 全局 ===== */
+/* ===== 基础 ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -27,85 +44,67 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.8);
   z-index: 1000;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  margin: 0 20px;
+nav li {
+  margin: 5px 10px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-nav ul li a:hover {
-  color: #c59d5f;
-}
-
-/* ===== 大图（优化比例） ===== */
+/* ===== HERO ===== */
 .hero {
-  height: 45vh;
+  height: 60vh;
   background: url("tabac1.jpg") center/cover no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  justify-content: center;
   text-align: center;
-  color: white;
-  padding: 20px;
+  padding-top: 60px;
 }
 
 .hero h1 {
-  font-size: 32px;
   background: rgba(0,0,0,0.6);
+  color: white;
   padding: 15px 25px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  max-width: 700px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 22px;
 }
 
 /* ===== 区块 ===== */
 .section {
-  padding: 60px 20px;
-  text-align: center;
-  max-width: 1200px;
+  padding: 40px 15px;
+  max-width: 900px;
   margin: auto;
-}
-
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* ===== 图片 ===== */
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
-  gap: 20px;
 }
 
 .gallery img {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
 }
 
@@ -113,21 +112,16 @@ nav ul li a:hover {
 .services {
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
-  gap: 25px;
 }
 
 .service {
   background: white;
-  padding: 25px;
-  width: 260px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.service:hover {
-  transform: translateY(-8px);
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .service h3 {
@@ -137,30 +131,36 @@ nav ul li a:hover {
 /* ===== 按钮 ===== */
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
+  margin-top: 20px;
+  padding: 10px 20px;
   background: black;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-}
-
-.btn:hover {
-  background: #c59d5f;
+  border-radius: 5px;
 }
 
 /* ===== 电话按钮 ===== */
 .call-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background: #c59d5f;
   color: white;
-  padding: 16px;
+  padding: 12px;
   border-radius: 50%;
-  text-decoration: none;
-  font-size: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== 📱 PC优化 ===== */
+@media (min-width: 768px) {
+
+.hero {
+  height: 70vh;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
 }
 
 </style>
@@ -179,19 +179,31 @@ nav ul li a:hover {
 </ul>
 </nav>
 
-<!-- 大图 -->
+<!-- HERO -->
 <div class="hero">
 <h1>Tabac FDJ Vapotage à Belleville-en-Beaujolais</h1>
-
-<p>Ouvert toute l’année, y compris dimanches et jours fériés.</p>
-
-<p>Situé face à la gare, service rapide pour clients locaux et de passage.</p>
 </div>
 
-<!-- 简介 -->
+<!-- ⭐ SEO核心内容（非常重要） -->
 <div class="section">
-<h2>Services de proximité</h2>
-<p>Votre tabac à Belleville-en-Beaujolais pour tous vos besoins quotidiens.</p>
+
+<h2>Tabac à Belleville-en-Beaujolais ouvert 7j/7</h2>
+
+<p>
+Notre tabac FDJ situé à Belleville-en-Beaujolais est ouvert tous les jours,
+y compris le dimanche et les jours fériés.
+</p>
+
+<p>
+Nous proposons cigarettes, vapotage (e-cigarettes), jeux FDJ
+et services de proximité pour les clients locaux et de passage.
+</p>
+
+<p>
+Situé au 43 rue Maréchal Foch, à proximité immédiate de la gare,
+notre tabac est idéal pour vos achats rapides.
+</p>
+
 </div>
 
 <!-- 图片 -->
@@ -213,12 +225,12 @@ nav ul li a:hover {
 
 <div class="service">
 <h3>🚬 Tabac</h3>
-<p>Cigarettes, tabac, accessoires.</p>
+<p>Cigarettes, accessoires.</p>
 </div>
 
 <div class="service">
 <h3>🎯 FDJ</h3>
-<p>Jeux à gratter et Loto.</p>
+<p>Jeux à gratter, Loto.</p>
 </div>
 
 <div class="service">
@@ -228,7 +240,7 @@ nav ul li a:hover {
 
 <div class="service">
 <h3>📦 Services</h3>
-<p>Paiements, recharges, services locaux.</p>
+<p>Paiements, recharges.</p>
 </div>
 
 </div>
@@ -237,7 +249,7 @@ nav ul li a:hover {
 
 </div>
 
-<!-- 电话按钮 -->
+<!-- 📞 -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
