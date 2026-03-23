@@ -2,118 +2,156 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Bar - La Route des Vins</title>
+
+<title>Bar Belleville-en-Beaujolais | Café, Bières, Vins – La Route des Vins</title>
+
+<meta name="description" content="Bar convivial à Belleville-en-Beaujolais face à la gare. Café, bières pression, vins, cocktails. Ouvert tous les jours.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
 <link rel="icon" type="image/png" href="favicon.png">
+
+<!-- ⭐ SEO结构化 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BarOrPub",
+ "name": "Bar La Route des Vins",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "1 Place de la Gare",
+   "addressLocality": "Belleville-en-Beaujolais",
+   "postalCode": "69220",
+   "addressCountry": "FR"
+ },
+ "telephone": "+33474663468"
+}
+</script>
+
 <style>
+
+/* ===== 基础 ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
 
-/* 导航 */
+/* ===== 导航 ===== */
 nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  margin: 0 20px;
+nav li {
+  margin: 5px 10px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-nav ul li a:hover {
-  color: #c59d5f;
-}
-
-/* 大图 */
+/* ===== HERO ===== */
 .hero {
   height: 60vh;
   background: url("bar1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .hero h1 {
   background: rgba(0,0,0,0.6);
   color: white;
-  padding: 20px 30px;
-  border-radius: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 22px;
 }
 
-/* 区块 */
+/* ===== 区块 ===== */
 .section {
-  padding: 60px 20px;
+  padding: 40px 15px;
+  max-width: 900px;
+  margin: auto;
   text-align: center;
 }
 
-/* 菜单 */
+/* ===== 菜单 ===== */
 .menu {
-  max-width: 600px;
-  margin: auto;
   text-align: left;
 }
 
 .menu h3 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   color: #c59d5f;
 }
 
 .menu-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ddd;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-/* 按钮 */
+/* ===== 按钮 ===== */
 .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 10px 20px;
   background: black;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
-.btn:hover {
-  background: #c59d5f;
-}
-
-/* 电话按钮 */
+/* ===== 电话按钮 ===== */
 .call-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background: #c59d5f;
   color: white;
-  padding: 15px;
+  padding: 12px;
   border-radius: 50%;
-  text-decoration: none;
 }
-</style>
 
+/* ===== 📱 移动端优化 ===== */
+@media (min-width: 768px) {
+
+.hero {
+  height: 70vh;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.menu-item {
+  font-size: 16px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
@@ -129,19 +167,31 @@ nav ul li a:hover {
 </ul>
 </nav>
 
-<!-- 大图 -->
+<!-- HERO -->
 <div class="hero">
-<h1>Notre Bar</h1>
+<h1>Bar à Belleville-en-Beaujolais</h1>
 </div>
 
-<!-- 简介 -->
+<!-- ⭐ SEO内容 -->
 <div class="section">
-<h2>Ambiance conviviale</h2>
-<p>Profitez d’un moment agréable autour d’un verre dans une ambiance chaleureuse.</p>
+
+<h2>Bar convivial à Belleville-en-Beaujolais</h2>
+
+<p>
+Situé à 1 Place de la Gare, face à la gare de Belleville-en-Beaujolais,
+notre bar vous accueille tous les jours dans une ambiance chaleureuse.
+</p>
+
+<p>
+Café, bières pression, vins et cocktails : idéal pour une pause rapide
+ou un moment de détente entre amis.
+</p>
+
 </div>
 
 <!-- 菜单 -->
 <div class="section">
+
 <h2>Notre carte</h2>
 
 <div class="menu">
@@ -155,31 +205,15 @@ nav ul li a:hover {
 <div class="menu-item"><span>Thé</span><span>3.5€</span></div>
 
 <h3>🥤 Sodas & Jus</h3>
-<div class="menu-item"><span>Coca, Orangina, Perrier...</span><span>3.5€</span></div>
+<div class="menu-item"><span>Coca, Orangina, Perrier</span><span>3.5€</span></div>
 <div class="menu-item"><span>Jus de fruits</span><span>3.5€</span></div>
 
 <h3>🍺 Bières pression</h3>
-<div class="menu-item"><span>Heineken (15/25/50cl)</span><span>2€ / 3€ / 5.8€</span></div>
-<div class="menu-item"><span>Pélican (25/50cl)</span><span>4€ / 8€</span></div>
-<div class="menu-item"><span>Bières du moment</span><span>3.6€ / 7€</span></div>
-
-<h3>🥃 Alcools</h3>
-<div class="menu-item"><span>Whisky / Gin / Rhum</span><span>6.5€</span></div>
-<div class="menu-item"><span>Jack Daniel’s</span><span>8€</span></div>
-<div class="menu-item"><span>Vodka</span><span>7€</span></div>
-<div class="menu-item"><span>Ricard</span><span>2.6€</span></div>
-<div class="menu-item"><span>Martini</span><span>4.5€</span></div>
-<div class="menu-item"><span>Get 27/31</span><span>5€ / 5.5€</span></div>
-<div class="menu-item"><span>Jägerbomb</span><span>7€</span></div>
+<div class="menu-item"><span>Heineken</span><span>2€ / 3€ / 5.8€</span></div>
+<div class="menu-item"><span>Pélican</span><span>4€ / 8€</span></div>
 
 <h3>🍷 Vins</h3>
-<div class="menu-item"><span>Ordinaire (12.5/25/50cl)</span><span>1.8€ / 3.3€ / 6€</span></div>
-<div class="menu-item"><span>Supérieur</span><span>2.5€ / 5€ / 9€</span></div>
-<div class="menu-item"><span>Kir</span><span>3.5€</span></div>
-
-<h3>➕ Suppléments</h3>
-<div class="menu-item"><span>Tranche / Lait</span><span>0.5€</span></div>
-<div class="menu-item"><span>Sirop</span><span>0.3€</span></div>
+<div class="menu-item"><span>Vin au verre</span><span>1.8€ – 9€</span></div>
 
 </div>
 
@@ -187,7 +221,7 @@ nav ul li a:hover {
 
 </div>
 
-<!-- 电话浮动 -->
+<!-- 📞 -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
