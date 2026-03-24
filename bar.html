@@ -3,57 +3,44 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Bar Belleville-en-Beaujolais | Café, Bières, Vins – La Route des Vins</title>
+<title>Bar à Belleville-en-Beaujolais | Café, Bières, Vins – La Route des Vins</title>
 
-<meta name="description" content="Bar convivial à Belleville-en-Beaujolais face à la gare. Café, bières pression, vins, cocktails. Ouvert tous les jours.">
+<meta name="description" content="Bar convivial à Belleville-en-Beaujolais face à la gare. Café, bières pression, vins et boissons. Ouvert tôt le matin.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- ⭐ SEO结构化 -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "BarOrPub",
- "name": "Bar La Route des Vins",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "1 Place de la Gare",
-   "addressLocality": "Belleville-en-Beaujolais",
-   "postalCode": "69220",
-   "addressCountry": "FR"
- },
- "telephone": "+33474663468"
-}
-</script>
-
 <style>
 
-/* ===== 基础 ===== */
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
 
-/* ===== 导航 ===== */
+/* ===== NAV ===== */
 nav {
   position: fixed;
-  width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.8);
+  width: 100%;
+  background: rgba(0,0,0,0.85);
   z-index: 1000;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 10px;
   margin: 0;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 nav li {
@@ -68,86 +55,86 @@ nav a {
 
 /* ===== HERO ===== */
 .hero {
-  height: 60vh;
+  height: 50vh;
   background: url("bar1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding-top: 60px;
+  margin-top: 50px;
 }
 
 .hero h1 {
   background: rgba(0,0,0,0.6);
   color: white;
   padding: 15px 25px;
-  border-radius: 8px;
-  font-size: 22px;
+  border-radius: 10px;
 }
 
-/* ===== 区块 ===== */
+/* ===== SECTION ===== */
 .section {
-  padding: 40px 15px;
-  max-width: 900px;
-  margin: auto;
+  padding: 50px 15px;
   text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* ===== 菜单 ===== */
+/* ===== MENU ===== */
 .menu {
   text-align: left;
+  margin-top: 20px;
 }
 
 .menu h3 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #c59d5f;
 }
 
 .menu-item {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
-  font-size: 14px;
+  font-size: 15px;
 }
 
-/* ===== 按钮 ===== */
+/* ===== BTN ===== */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 25px;
+  padding: 12px 25px;
   background: black;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
-/* ===== 电话按钮 ===== */
+.btn:hover {
+  background: #c59d5f;
+}
+
+/* ===== CALL BTN ===== */
 .call-btn {
   position: fixed;
   bottom: 15px;
   right: 15px;
   background: #c59d5f;
   color: white;
-  padding: 12px;
+  padding: 14px;
   border-radius: 50%;
+  text-decoration: none;
 }
 
-/* ===== 📱 移动端优化 ===== */
-@media (min-width: 768px) {
+/* ===== RESPONSIVE ===== */
+@media (min-width:768px) {
 
-.hero {
-  height: 70vh;
-}
+  .hero {
+    height: 60vh;
+  }
 
-.hero h1 {
-  font-size: 32px;
-}
-
-.menu-item {
-  font-size: 16px;
-}
+  .menu-item {
+    font-size: 16px;
+  }
 
 }
 
@@ -156,7 +143,7 @@ nav a {
 
 <body>
 
-<!-- 导航 -->
+<!-- NAV -->
 <nav>
 <ul>
 <li><a href="index.html">Accueil</a></li>
@@ -169,29 +156,20 @@ nav a {
 
 <!-- HERO -->
 <div class="hero">
-<h1>Bar à Belleville-en-Beaujolais</h1>
+<h1>Notre Bar</h1>
 </div>
 
-<!-- ⭐ SEO内容 -->
+<!-- INTRO -->
 <div class="section">
-
-<h2>Bar convivial à Belleville-en-Beaujolais</h2>
-
+<h2>Ambiance conviviale</h2>
 <p>
-Situé à 1 Place de la Gare, face à la gare de Belleville-en-Beaujolais,
-notre bar vous accueille tous les jours dans une ambiance chaleureuse.
+Bar chaleureux à Belleville-en-Beaujolais, idéal pour un café le matin ou un verre entre amis.
+Situé face à la gare avec parking facile.
 </p>
-
-<p>
-Café, bières pression, vins et cocktails : idéal pour une pause rapide
-ou un moment de détente entre amis.
-</p>
-
 </div>
 
-<!-- 菜单 -->
+<!-- MENU -->
 <div class="section">
-
 <h2>Notre carte</h2>
 
 <div class="menu">
@@ -209,11 +187,27 @@ ou un moment de détente entre amis.
 <div class="menu-item"><span>Jus de fruits</span><span>3.5€</span></div>
 
 <h3>🍺 Bières pression</h3>
-<div class="menu-item"><span>Heineken</span><span>2€ / 3€ / 5.8€</span></div>
-<div class="menu-item"><span>Pélican</span><span>4€ / 8€</span></div>
+<div class="menu-item"><span>Heineken (15/25/50cl)</span><span>2€ / 3€ / 5.8€</span></div>
+<div class="menu-item"><span>Pélican (25/50cl)</span><span>4€ / 8€</span></div>
+<div class="menu-item"><span>Bières du moment</span><span>3.6€ / 7€</span></div>
+
+<h3>🥃 Alcools</h3>
+<div class="menu-item"><span>Whisky / Gin / Rhum</span><span>6.5€</span></div>
+<div class="menu-item"><span>Jack Daniel’s</span><span>8€</span></div>
+<div class="menu-item"><span>Vodka</span><span>7€</span></div>
+<div class="menu-item"><span>Ricard</span><span>2.6€</span></div>
+<div class="menu-item"><span>Martini</span><span>4.5€</span></div>
+<div class="menu-item"><span>Get 27 / 31</span><span>5€ / 5.5€</span></div>
+<div class="menu-item"><span>Jägerbomb</span><span>7€</span></div>
 
 <h3>🍷 Vins</h3>
-<div class="menu-item"><span>Vin au verre</span><span>1.8€ – 9€</span></div>
+<div class="menu-item"><span>Vin ordinaire (12.5 / 25 / 50cl)</span><span>1.8€ / 3.3€ / 6€</span></div>
+<div class="menu-item"><span>Vin supérieur</span><span>2.5€ / 5€ / 9€</span></div>
+<div class="menu-item"><span>Kir</span><span>3.5€</span></div>
+
+<h3>➕ Suppléments</h3>
+<div class="menu-item"><span>Tranche / Lait</span><span>0.5€</span></div>
+<div class="menu-item"><span>Sirop</span><span>0.3€</span></div>
 
 </div>
 
@@ -221,7 +215,7 @@ ou un moment de détente entre amis.
 
 </div>
 
-<!-- 📞 -->
+<!-- CALL FLOAT -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
