@@ -3,51 +3,42 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Tabac Belleville-en-Beaujolais 7j/7 | FDJ Vapotage – La Route des Vins</title>
+<title>Tabac Belleville-en-Beaujolais ouvert 7j/7 | FDJ Vapotage – La Route des Vins</title>
 
-<meta name="description" content="Tabac FDJ à Belleville-en-Beaujolais ouvert 7j/7, dimanches et jours fériés. Vapotage, cigarettes, bar et hôtel face à la gare.">
+<meta name="description" content="Tabac FDJ à Belleville-en-Beaujolais ouvert 7j/7, dimanches et jours fériés. Cigarettes, vapotage, bar et hôtel face à la gare. Service rapide et parking gratuit.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" href="favicon.png">
 
-<!-- 🔥 SEO结构化（升级版） -->
+<!-- ⭐ SEO 结构化数据（关键） -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "LocalBusiness",
- "name": "La Route des Vins",
- "image": "https://laroutedesvins.github.io/hero.jpg",
+ "name": "Tabac La Route des Vins",
+ "image": "https://laroutedesvins69.com/tabac-entree.jpg",
  "address": {
    "@type": "PostalAddress",
-   "streetAddress": "43 Rue Marechal Foch",
+   "streetAddress": "43 Rue Maréchal Foch",
    "addressLocality": "Belleville-en-Beaujolais",
    "postalCode": "69220",
    "addressCountry": "FR"
  },
  "telephone": "+33474663468",
  "openingHours": "Mo-Su 06:15-20:00",
- "description": "Tabac FDJ, vapotage, bar et hôtel à Belleville-en-Beaujolais ouvert tous les jours.",
  "priceRange": "€"
 }
 </script>
 
 <style>
 
-/* ===== 防止页面缩放异常（核心） ===== */
-* {
-  box-sizing: border-box;
-}
+/* ===== 全局 ===== */
+* { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* ===== 基础 ===== */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
 }
@@ -57,52 +48,55 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  background: rgba(0,0,0,0.85);
   z-index: 1000;
-  background: rgba(0,0,0,0.7);
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
   margin: 0;
+  list-style: none;
 }
 
-nav ul li {
-  margin: 0 15px;
+nav li {
+  margin: 5px 10px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #c59d5f;
-}
-
-/* ===== 大图 ===== */
+/* ===== HERO（核心转化区） ===== */
 .hero {
   height: 100vh;
-  background: url("hero.jpg") center/cover no-repeat;
+  background: url("tabac-entree.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 60px;
+  padding: 20px;
 }
 
-.hero-content {
-  background: rgba(255,255,255,0.9);
+.hero-box {
+  background: rgba(255,255,255,0.92);
   padding: 30px;
   border-radius: 12px;
-  max-width: 90%;
+  max-width: 500px;
 }
 
 .hero h1 {
-  font-size: 28px;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 15px;
 }
 
 /* ===== 按钮 ===== */
@@ -114,6 +108,7 @@ nav ul li a:hover {
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -135,12 +130,11 @@ nav ul li a:hover {
 }
 
 .card {
-  width: 300px;
-  max-width: 90%;
+  width: 280px;
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .card img {
@@ -160,32 +154,20 @@ nav ul li a:hover {
 /* ===== 电话按钮 ===== */
 .call-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background: #c59d5f;
   color: white;
-  padding: 15px;
+  padding: 14px;
   border-radius: 50%;
-  font-size: 20px;
   text-decoration: none;
+  font-size: 20px;
 }
 
-/* ===== 手机优化 ===== */
-@media (max-width: 768px) {
-
-.hero h1 {
-  font-size: 22px;
-}
-
-nav ul {
-  gap: 10px;
-  font-size: 14px;
-}
-
-.section {
-  padding: 40px 15px;
-}
-
+/* ===== PC优化 ===== */
+@media (min-width:768px) {
+  .hero h1 { font-size: 36px; }
+  .hero p { font-size: 18px; }
 }
 
 </style>
@@ -193,7 +175,7 @@ nav ul {
 
 <body>
 
-<!-- 导航 -->
+<!-- ===== 导航 ===== -->
 <nav>
 <ul>
 <li><a href="index.html">Accueil</a></li>
@@ -204,16 +186,16 @@ nav ul {
 </ul>
 </nav>
 
-<!-- 大图 -->
+<!-- ===== HERO ===== -->
 <div class="hero">
-  <div class="hero-content">
-    <h1>Tabac FDJ Vapotage à Belleville-en-Beaujolais</h1>
-    <p>Ouvert 7j/7 – même dimanches et jours fériés</p>
+  <div class="hero-box">
+    <h1>Tabac ouvert 7j/7 à Belleville</h1>
+    <p>FDJ • Vapotage • Cigarettes<br>Dimanches et jours fériés</p>
     <a href="tabac.html" class="btn">Voir le tabac</a>
   </div>
 </div>
 
-<!-- 服务 -->
+<!-- ===== 服务 ===== -->
 <div class="section">
 <h2>Nos services</h2>
 
@@ -236,51 +218,42 @@ nav ul {
 <div class="card">
 <img src="hotel1.jpeg">
 <h3>Hôtel</h3>
-<p>Chambres confortables</p>
+<p>Chambres simples</p>
 <a href="hotel.html" class="btn">Réserver</a>
 </div>
 
 </div>
 </div>
 
-<!-- 🔥 引流（关键） -->
+<!-- ===== SEO 文本（排名关键） ===== -->
 <div class="section">
-<h2>Besoin rapide ?</h2>
-
-<p>Tabac ouvert aujourd’hui, dimanche et jours fériés</p>
-
-<a href="tabac-ouvert-aujourdhui.html" class="btn">
-🔥 Voir le tabac ouvert aujourd’hui
-</a>
-</div>
-
-<!-- SEO内容 -->
-<div class="section">
-<h2>Tabac à Belleville-en-Beaujolais</h2>
+<h2>Tabac Belleville-en-Beaujolais</h2>
 
 <p>
-Notre tabac FDJ à Belleville-en-Beaujolais est ouvert tous les jours, y compris dimanches et jours fériés.
-Nous proposons cigarettes, vapotage (e-cigarettes) et jeux FDJ.
+Vous cherchez un tabac ouvert aujourd’hui à Belleville-en-Beaujolais ?  
+La Route des Vins est ouverte tous les jours, y compris le dimanche et les jours fériés.
 </p>
 
 <p>
-Situé face à la gare, La Route des Vins offre un service rapide et pratique pour tous vos besoins quotidiens.
+Situé face à la gare, notre établissement propose cigarettes, jeux FDJ, vapotage et services rapides pour les clients locaux et de passage.
 </p>
+
 </div>
 
-<!-- 地图 -->
+<!-- ===== 地图 ===== -->
 <div class="section">
 <h2>Nous trouver</h2>
 
-<p>43 Rue Marechal Foch – 69220 Belleville-en-Beaujolais</p>
+<p>🚬 Tabac : 43 Rue Maréchal Foch</p>
+<p>🍷 Bar & 🏨 Hôtel : 1 Place de la Gare</p>
 
 <div class="map">
-<iframe src="https://www.google.com/maps?q=43+Rue+Marechal+Foch+Belleville-en-Beaujolais&output=embed"></iframe>
+<iframe src="https://www.google.com/maps?q=43+Rue+Maréchal+Foch+Belleville-en-Beaujolais&output=embed"></iframe>
 </div>
 
 </div>
 
-<!-- 电话按钮 -->
+<!-- 📞 -->
 <a href="tel:0474663468" class="call-btn">📞</a>
 
 </body>
