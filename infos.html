@@ -12,9 +12,29 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 
+<!-- ⭐ SEO结构化 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "La Route des Vins",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "43 Rue Marechal Foch",
+   "addressLocality": "Belleville-en-Beaujolais",
+   "postalCode": "69220",
+   "addressCountry": "FR"
+ },
+ "telephone": "+33474663468",
+ "openingHours": "Mo-Su 06:15-20:00"
+}
+</script>
+
 <style>
 
-/* ===== 基础 ===== */
+/* ===== 防止页面错位 ===== */
+* { box-sizing: border-box; }
+
 body {
   margin:0;
   font-family: Arial, sans-serif;
@@ -47,6 +67,32 @@ nav a {
   color:white;
   text-decoration:none;
   font-size:14px;
+}
+
+/* ===== ⭐ 顶部图片（新增） ===== */
+.hero {
+  height:40vh;
+  background:url("tabac-entree.jpeg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin-top:50px;
+  position:relative;
+}
+
+.hero::before {
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position:relative;
+  color:white;
+  z-index:2;
 }
 
 /* ===== 区块 ===== */
@@ -117,12 +163,8 @@ h2 {
 
 /* ===== 📱 PC优化 ===== */
 @media (min-width:768px) {
-  .section {
-    padding:70px 20px;
-  }
-  .map {
-    height:400px;
-  }
+  .section { padding:70px 20px; }
+  .map { height:400px; }
 }
 
 </style>
@@ -141,23 +183,31 @@ h2 {
 </ul>
 </nav>
 
+<!-- ⭐ 顶部入口图（新增） -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Nous trouver facilement</h1>
+    <p>Entrée côté Tabac – 43 Rue Maréchal Foch</p>
+  </div>
+</div>
+
 <!-- ⭐ 核心卖点 -->
 <div class="section">
 <div class="card">
 <h2>Bienvenue</h2>
 
-<p style="font-size:16px;">
+<p>
 Ouvert tôt le matin – idéal pour voyageurs, ouvriers et professionnels.
 </p>
 
-<p style="margin-top:10px;">
-Situé au cœur de Belleville-en-Beaujolais, face à la gare.
+<p>
+Situé à Belleville-en-Beaujolais, face à la gare.
 </p>
 
 </div>
 </div>
 
-<!-- ⭐ Horaires（SEO重点） -->
+<!-- ⭐ Horaires -->
 <div class="section">
 <h2>Horaires</h2>
 
@@ -180,14 +230,10 @@ Ouvert du 1er avril au 31 octobre<br>
 Check-in : 14h – 20h
 </p>
 
-<p style="margin-top:10px; font-size:13px; color:#666;">
-Les horaires peuvent varier selon l’activité.
-</p>
-
 </div>
 </div>
 
-<!-- ⭐ 地址（双地址逻辑） -->
+<!-- ⭐ 地址 -->
 <div class="section">
 <h2>Nous trouver</h2>
 
@@ -197,7 +243,7 @@ Les horaires peuvent varier selon l’activité.
 43 Rue Maréchal Foch
 </p>
 
-<p><strong>🍷 Bar & 🏨 Hôtel :</strong><br>
+<p><strong>🍷 Bar & Hôtel :</strong><br>
 1 Place de la Gare (face à la gare)
 </p>
 
@@ -207,7 +253,6 @@ Les horaires peuvent varier selon l’activité.
 
 </div>
 
-<!-- ⭐ 地图（保持主入口） -->
 <iframe class="map"
 src="https://www.google.com/maps?q=1+Place+de+la+Gare+Belleville-en-Beaujolais&output=embed">
 </iframe>
