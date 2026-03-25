@@ -12,11 +12,23 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 
+<!-- 🔥 Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FGL8BMFX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-G4FGL8BMFX', {
+  'anonymize_ip': true
+});
+</script>
+
 <!-- ⭐ SEO结构化 -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "TobaccoStore",
+ "@type": "Store",
  "name": "TABAC LA ROUTE DES VINS",
  "address": {
    "@type": "PostalAddress",
@@ -26,7 +38,8 @@
    "addressCountry": "FR"
  },
  "telephone": "+33474663468",
- "openingHours": "Mo-Su 06:15-20:00"
+ "openingHours": "Mo-Su 06:15-20:00",
+ "url": "https://laroutedesvins69.com"
 }
 </script>
 
@@ -56,9 +69,7 @@ nav ul {
   flex-wrap:wrap;
 }
 
-nav li {
-  margin:5px 10px;
-}
+nav li { margin:5px 10px; }
 
 nav a {
   color:white;
@@ -123,9 +134,7 @@ nav a {
 
 /* PC */
 @media (min-width:768px){
-.hero h1 {
-  font-size:32px;
-}
+.hero h1 { font-size:32px; }
 }
 
 </style>
@@ -165,12 +174,12 @@ Notre tabac est ouvert <strong>tous les jours</strong>, y compris le dimanche et
 </p>
 
 <p>
-Que ce soit aujourd’hui, ce soir ou pendant un jour férié, vous pouvez trouver :
+Disponible immédiatement :
 </p>
 
 <p>
 🚬 Cigarettes<br>
-💨 Vapotage (cigarette électronique)<br>
+💨 Vapotage<br>
 🎯 Jeux FDJ<br>
 📦 Services rapides
 </p>
@@ -181,7 +190,10 @@ Que ce soit aujourd’hui, ce soir ou pendant un jour férié, vous pouvez trouv
 📍 43 rue Maréchal Foch – Belleville-en-Beaujolais
 </p>
 
-<a href="tel:0474663468" class="btn">📞 Appeler maintenant</a>
+<!-- 🔥 电话统计（核心） -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'aujourdhui'});"
+class="btn">📞 Appeler maintenant</a>
 
 </div>
 
@@ -216,7 +228,10 @@ src="https://www.google.com/maps?q=43+Rue+Marechal+Foch+Belleville-en-Beaujolais
 
 </div>
 
-<a href="tel:0474663468" class="call-btn">📞</a>
+<!-- 🔥 浮动电话统计 -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'aujourdhui_float'});"
+class="call-btn">📞</a>
 
 </body>
 </html>
