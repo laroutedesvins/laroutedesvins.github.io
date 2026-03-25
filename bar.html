@@ -12,12 +12,22 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 
+<!-- 🔥 Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FGL8BMFX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-G4FGL8BMFX', {
+  'anonymize_ip': true
+});
+</script>
+
 <style>
 
 /* ===== RESET ===== */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -43,9 +53,7 @@ nav ul {
   list-style: none;
 }
 
-nav li {
-  margin: 5px 10px;
-}
+nav li { margin: 5px 10px; }
 
 nav a {
   color: white;
@@ -127,15 +135,8 @@ nav a {
 
 /* ===== RESPONSIVE ===== */
 @media (min-width:768px) {
-
-  .hero {
-    height: 60vh;
-  }
-
-  .menu-item {
-    font-size: 16px;
-  }
-
+  .hero { height: 60vh; }
+  .menu-item { font-size: 16px; }
 }
 
 </style>
@@ -201,8 +202,8 @@ Situé face à la gare avec parking facile.
 <div class="menu-item"><span>Jägerbomb</span><span>7€</span></div>
 
 <h3>🍷 Vins</h3>
-<div class="menu-item"><span>Vin ordinaire (12.5 / 25 / 50cl)</span><span>1.8€ / 3.3€ / 6€</span></div>
-<div class="menu-item"><span>Vin supérieur</span><span>2.5€ / 5€ / 9€</span></div>
+<div class="menu-item"><span>Vin ordinaire</span><span>1.8€ – 6€</span></div>
+<div class="menu-item"><span>Vin supérieur</span><span>2.5€ – 9€</span></div>
 <div class="menu-item"><span>Kir</span><span>3.5€</span></div>
 
 <h3>➕ Suppléments</h3>
@@ -211,12 +212,17 @@ Situé face à la gare avec parking facile.
 
 </div>
 
-<a href="tel:0474663468" class="btn">Nous appeler</a>
+<!-- 🔥 电话统计 -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'bar'});"
+class="btn">Nous appeler</a>
 
 </div>
 
-<!-- CALL FLOAT -->
-<a href="tel:0474663468" class="call-btn">📞</a>
+<!-- 🔥 浮动电话统计 -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'bar_float'});"
+class="call-btn">📞</a>
 
 </body>
 </html>
