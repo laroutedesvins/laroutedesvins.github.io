@@ -12,11 +12,25 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 
+<!-- 🔥 Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FGL8BMFX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-G4FGL8BMFX', {
+  'anonymize_ip': true
+});
+</script>
+
+<!-- ⭐ SEO结构化（增强版） -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Store",
  "name": "TABAC LA ROUTE DES VINS",
+ "image": "https://laroutedesvins69.com/tabac2.jpg",
  "address": {
    "@type": "PostalAddress",
    "streetAddress": "43 Rue Maréchal Foch",
@@ -24,7 +38,8 @@
    "postalCode": "69220",
    "addressCountry": "FR"
  },
- "telephone": "+33474663468"
+ "telephone": "+33474663468",
+ "url": "https://laroutedesvins69.com"
 }
 </script>
 
@@ -54,9 +69,7 @@ nav ul {
   flex-wrap:wrap;
 }
 
-nav li {
-  margin:5px 10px;
-}
+nav li { margin:5px 10px; }
 
 nav a {
   color:white;
@@ -91,6 +104,7 @@ nav a {
   text-align:center;
 }
 
+/* 按钮 */
 .btn {
   display:inline-block;
   margin-top:20px;
@@ -101,6 +115,7 @@ nav a {
   border-radius:5px;
 }
 
+/* 电话按钮 */
 .call-btn {
   position:fixed;
   bottom:15px;
@@ -154,10 +169,13 @@ disponibles tous les jours, y compris dimanche et jours fériés.
 </p>
 
 <p>
-Situé au <strong>43 rue Maréchal Foch</strong>, notre tabac est facilement accessible.
+Situé au <strong>43 rue Maréchal Foch</strong>, accès rapide face à la gare.
 </p>
 
-<a href="tel:0474663468" class="btn">📞 Nous appeler</a>
+<!-- 🔥 电话统计 -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'vapotage'});"
+class="btn">📞 Nous appeler</a>
 
 </div>
 
@@ -172,7 +190,10 @@ src="https://www.google.com/maps?q=43+Rue+Marechal+Foch+Belleville-en-Beaujolais
 
 </div>
 
-<a href="tel:0474663468" class="call-btn">📞</a>
+<!-- 🔥 浮动电话统计 -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'vapotage_float'});"
+class="call-btn">📞</a>
 
 </body>
 </html>
