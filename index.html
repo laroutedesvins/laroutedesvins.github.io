@@ -12,6 +12,37 @@
 
 <link rel="icon" href="favicon.png">
 
+<!-- 🔥 Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FGL8BMFX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-G4FGL8BMFX', {
+  'anonymize_ip': true
+});
+</script>
+
+<!-- 🔥 SEO结构化数据 -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "La Route des Vins",
+ "image": "https://laroutedesvins69.com/hero.jpg",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "43 Rue Marechal Foch",
+   "addressLocality": "Belleville-en-Beaujolais",
+   "postalCode": "69220",
+   "addressCountry": "FR"
+ },
+ "telephone": "+33474663468",
+ "openingHours": "Mo-Su 06:15-20:00"
+}
+</script>
+
 <style>
 
 /* ===== 全局 ===== */
@@ -68,12 +99,13 @@ nav a {
   max-width: 500px;
 }
 
-/* ⭐ LOGO */
+/* LOGO */
 .logo {
   width: 160px;
   margin-bottom: 15px;
 }
 
+/* 标题 */
 .hero h1 {
   font-size: 26px;
   margin-bottom: 10px;
@@ -83,7 +115,7 @@ nav a {
   font-size: 15px;
 }
 
-/* ===== 按钮 ===== */
+/* 按钮 */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -99,13 +131,13 @@ nav a {
   background: #c59d5f;
 }
 
-/* ===== 区块 ===== */
+/* 区块 */
 .section {
   padding: 60px 20px;
   text-align: center;
 }
 
-/* ===== 卡片 ===== */
+/* 卡片 */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +159,7 @@ nav a {
   object-fit: cover;
 }
 
-/* ===== 地图 ===== */
+/* 地图 */
 .map iframe {
   width: 100%;
   height: 300px;
@@ -135,7 +167,7 @@ nav a {
   border-radius: 10px;
 }
 
-/* ===== 电话按钮 ===== */
+/* 电话按钮 */
 .call-btn {
   position: fixed;
   bottom: 15px;
@@ -148,7 +180,7 @@ nav a {
   font-size: 20px;
 }
 
-/* ===== PC优化 ===== */
+/* PC优化 */
 @media (min-width:768px) {
   .hero h1 { font-size: 36px; }
   .hero p { font-size: 18px; }
@@ -170,12 +202,11 @@ nav a {
 </ul>
 </nav>
 
-<!-- ⭐ HERO -->
+<!-- HERO -->
 <div class="hero">
   <div class="hero-box">
 
-    <!-- ⭐ LOGO（关键） -->
-    <img src="logo-bar.png" class="logo">
+    <img src="logo-bar.png" class="logo" alt="La Route des Vins logo">
 
     <h1>Bar • Tabac • Hôtel</h1>
     <p>Belleville-en-Beaujolais – face à la gare</p>
@@ -192,21 +223,21 @@ nav a {
 <div class="cards">
 
 <div class="card">
-<img src="bar1.jpeg">
+<img src="bar1.jpeg" alt="bar belleville en beaujolais">
 <h3>Bar</h3>
 <p>Ambiance conviviale</p>
 <a href="bar.html" class="btn">Découvrir</a>
 </div>
 
 <div class="card">
-<img src="tabac1.jpg">
+<img src="tabac1.jpg" alt="tabac fdj belleville">
 <h3>Tabac</h3>
 <p>FDJ, vapotage, ouvert 7j/7</p>
 <a href="tabac.html" class="btn">Voir plus</a>
 </div>
 
 <div class="card">
-<img src="hotel1.jpeg">
+<img src="hotel1.jpeg" alt="hotel belleville en beaujolais">
 <h3>Hôtel</h3>
 <p>Chambres confortables</p>
 <a href="hotel.html" class="btn">Réserver</a>
@@ -215,13 +246,13 @@ nav a {
 </div>
 </div>
 
-<!-- SEO -->
+<!-- SEO文本 -->
 <div class="section">
 <h2>Tabac Belleville-en-Beaujolais</h2>
 
 <p>
 Tabac ouvert aujourd’hui à Belleville-en-Beaujolais, y compris dimanche et jours fériés.
-FDJ, cigarettes, vapotage et services rapides.
+FDJ, cigarettes, vapotage et service rapide face à la gare.
 </p>
 
 </div>
@@ -239,8 +270,10 @@ FDJ, cigarettes, vapotage et services rapides.
 
 </div>
 
-<!-- 电话 -->
-<a href="tel:0474663468" class="call-btn">📞</a>
+<!-- 电话（带统计） -->
+<a href="tel:0474663468"
+onclick="gtag('event','click_call',{event_category:'contact',event_label:'phone'});"
+class="call-btn">📞</a>
 
 </body>
 </html>
